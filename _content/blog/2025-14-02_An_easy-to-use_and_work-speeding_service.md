@@ -10,6 +10,8 @@ tags:
 
 **A guest blog initially published in [Maanmittauslaitos.fi](https://www.maanmittauslaitos.fi/palvelutiedotteet/paikkatietoikkunaa-hyodynnetaan-tyotehtavissa-useilla-aloilla-nain-kayttajat) in 5.2.2025.**
 
+![A photograph of Paikkatietoikkuna user](/resources/2025/MMLI-PTI.jpg)
+
 # An easy-to-use and work-speeding service
 
 Paikkatietoikkuna is necessary for many people in their work tasks. This became clear after we asked about the use of the service. We received over 1,000 responses to our survey, which was open in the fall of 2024. What is most pleasing is that the respondents are very satisfied: Paikkatietoikkuna received a school grade of 8.9 out of 10.
