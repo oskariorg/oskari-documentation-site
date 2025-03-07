@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 'Sign up for Oskari Developers' Day 2025'
-excerpt: 'We invite Oskari developers new & old to Espoo for Developers' Day!'
+title: 'Sign up for Oskari Developers\' Day 2025'
+excerpt: 'We invite Oskari developers new & old to Espoo for Developers\' Day!'
 date: 2025-03-07 11:30:00 +0200
 categories: [developing, event]
 tags:
@@ -11,6 +11,8 @@ tags:
 ![A decorative picture of the Developers' Day](/resources/2025/Oskari_DevDay_2025_.png)
 
 # Ilmottaudu mukaan Oskari-kehittäjien päivään 2025!
+
+(in English below)
 
 📅 Päivä: 1.4.2025
 
