@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 'Sign up for Oskari Developers\' Day 2025'
-excerpt: 'We invite Oskari developers new & old to Espoo for Developers\' Day!'
+title: "Sign up for Oskari Developers' Day 2025"
+excerpt: "We invite Oskari developers new & old to Espoo for Developers' Day!"
 date: 2025-03-07 11:30:00 +0200
 categories: [developing, event]
 tags:
