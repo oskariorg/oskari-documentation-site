@@ -8,7 +8,7 @@ tags:
   - blog
 ---
 
-![A photograph of Oskari Rintamäki](/resources/2025/oskari_rintamaki.png)
+![A photograph of Oskari Rintamäki](/resources/2025/Oskari_Rintamaki.png)
 
 # Oskari developers: Oskari Rintamäki
 
