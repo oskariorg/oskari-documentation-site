@@ -18,7 +18,7 @@ tags:
 
 ⏰ Aika: 9:00 - 16:00
 
-📍 Osoite: Linnoitustie 6 D, Espoo
+📍 Osoite: Linnoitustie 6 D, Espoo (Sitowisen tilat)
 
 Olitpa kokenut pitkän linjan Oskari-koodaaja tai vasta aloittamassa Oskarin kehittämistä, tervetuloa kehittäjäpäivään! Paikalle voivat tulla niin vanhat kuin uudetkin tekijät.
 
@@ -42,7 +42,7 @@ Tämä on erinomainen mahdollisuus osallistua, oppia ja jakaa kokemuksia Oskarin
 
 ⏰ Time: 9:00 - 16:00
 
-📍 Address: Linnoitustie 6 D, Espoo
+📍 Address: Linnoitustie 6 D, Espoo (Sitowise's facilities)
 
 Whether you're a seasoned pro or just starting your coding journey with Oskari, this day is for you! We welcome Oskari developers both new & old.
 
