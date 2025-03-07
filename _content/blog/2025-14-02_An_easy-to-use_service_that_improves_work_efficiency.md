@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'An easy-to-use and work-speeding service'
+title: 'An easy-to-use and time-saving service'
 excerpt: 'Paikkatietoikkuna is used in work tasks in many fields - how users evaluate the service?'
 date: 2025-02-14 14:00:00 +0200
 categories: [use cases]
@@ -12,7 +12,7 @@ tags:
 
 ![A photograph of Paikkatietoikkuna user](/resources/2025/MMLI-PTI.jpg)
 
-# An easy-to-use and work-speeding service
+# An easy-to-use service that improves work efficiency
 
 Paikkatietoikkuna is necessary for many people in their work tasks. This became clear after we asked about the use of the service. We received over 1,000 responses to our survey, which was open in the fall of 2024. What is most pleasing is that the respondents are very satisfied: Paikkatietoikkuna received a school grade of 8.9 out of 10.
 
