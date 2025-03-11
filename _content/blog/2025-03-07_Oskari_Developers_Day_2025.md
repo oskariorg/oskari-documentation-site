@@ -10,7 +10,7 @@ tags:
 
 ![A decorative picture of the Developers' Day](/resources/2025/Oskari_DevDay_2025_.png)
 
-# Ilmottaudu mukaan Oskari-kehittäjien päivään 2025!
+# Ilmoittaudu mukaan Oskari-kehittäjien päivään 2025!
 
 (in English below)
 
@@ -32,7 +32,7 @@ Tapahtumaan voi tulla kysymään Oskarin kehittämisestä, kertoa omista projekt
 
 Tämä on erinomainen mahdollisuus osallistua, oppia ja jakaa kokemuksia Oskarin kehittämisestä. Nähdään siellä! 👋
 
-**Rekisteröidy tapahtumaan [tästä!](https://docs.google.com/forms/d/e/1FAIpQLSeKpdH50bnvHVhtQwwIRslFa4uXHUFTPEwekn2ANvbVidpjuw/viewform?usp=sharing)**
+**Ilmoittaudu mukaan tapahtumaan [tästä!](https://docs.google.com/forms/d/e/1FAIpQLSeKpdH50bnvHVhtQwwIRslFa4uXHUFTPEwekn2ANvbVidpjuw/viewform?usp=sharing)**
 
 
 
@@ -57,5 +57,5 @@ Feel free to ask any questions about developing Oskari, share your projects, or 
 
 This is a great opportunity to collaborate, learn, and share insights. We look forward to seeing you there! 👋 
 
-**Sign up [here!](https://docs.google.com/forms/d/e/1FAIpQLSeKpdH50bnvHVhtQwwIRslFa4uXHUFTPEwekn2ANvbVidpjuw/viewform?usp=sharing)**
+**Sign up for the event [here!](https://docs.google.com/forms/d/e/1FAIpQLSeKpdH50bnvHVhtQwwIRslFa4uXHUFTPEwekn2ANvbVidpjuw/viewform?usp=sharing)**
 
