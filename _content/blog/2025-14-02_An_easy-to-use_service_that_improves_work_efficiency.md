@@ -10,7 +10,8 @@ tags:
 
 **A guest blog initially published in [Maanmittauslaitos.fi](https://www.maanmittauslaitos.fi/palvelutiedotteet/paikkatietoikkunaa-hyodynnetaan-tyotehtavissa-useilla-aloilla-nain-kayttajat) in 5.2.2025.**
 
-![A photograph of Paikkatietoikkuna user](/resources/2025/MMLI-PTI.jpg)
+![A photograph of Paikkatietoikkuna user - copyright NLS FI 2025](/resources/2025/MMLI-PTI.jpg)
+*A photograph of Paikkatietoikkuna user - copyright NLS FI 2025*
 
 # An easy-to-use service that improves work efficiency
 

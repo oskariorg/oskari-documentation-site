@@ -13,16 +13,12 @@ export const metadata: Metadata = {
 
 const COMMERCIAL_SUPPORT = [
   {
-    name: 'Knowit',
-    url: 'https://www.knowit.fi/',
+    name: 'Advian',
+    url: 'https://www.advian.fi/',
   },
   {
     name: 'CGI Finland',
     url: 'https://www.cgi.com/fi/fi',
-  },
-  {
-    name: 'Sitowise',
-    url: 'https://www.sitowise.com/',
   },
   {
     name: 'Gispo Finland Ltd',
@@ -33,12 +29,20 @@ const COMMERCIAL_SUPPORT = [
     url: 'https://hubble.fi/',
   },
   {
+    name: 'Knowit',
+    url: 'https://www.knowit.fi/',
+  },
+  {
     name: 'Phz Full Stack',
     url: 'https://phz.fi/',
   },
   {
     name: 'Siili',
     url: 'https://www.siili.com/',
+  },
+  {
+    name: 'Sitowise',
+    url: 'https://www.sitowise.com/',
   },
   {
     name: 'Ubigu',
