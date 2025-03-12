@@ -27,6 +27,7 @@ Olitpa kokenut pitkän linjan Oskari-koodaaja tai vasta aloittamassa Oskarin keh
 Aamupäivä (9-11)
 - Oskari 3.0 esittely - mitä uutta & mitä huomioida päivittämisessä? (MML & Sitowise)
 - OAuth2 + Entra ID -käyttö Oskariin kirjautumiseen (Ubigu)
+- RPC-toiminnallisuuksien lisääminen (Gispo)
 - Kokemusten jakamista Oskari-tekemisestä teidän organisaatioissanne, käyttötapauksia ym.
 
 Omakustanteinen lounas
@@ -59,6 +60,7 @@ Whether you're a seasoned pro or just starting your coding journey with Oskari, 
 Morning (9:00-11:00)
 - Oskari 3.0 - what's new & how to update? (NLS FI & Sitowise)
 - Using OAuth2 + Entra ID to sign up to Oskari (Ubigu)
+- Creating new RPC functionalities (Gispo)
 - Sharing the latest Oskari-related work in your organizations, use cases, etc.
 
 Self-paid lunch
