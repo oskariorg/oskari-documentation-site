@@ -22,13 +22,21 @@ tags:
 
 Olitpa kokenut pitkän linjan Oskari-koodaaja tai vasta aloittamassa Oskarin kehittämistä, tervetuloa kehittäjäpäivään! Paikalle voivat tulla niin vanhat kuin uudetkin tekijät.
 
-Alustava ohjelma:
-- Työpajat Oskarin geoportaalin tai RPC:n pystyttämiseen
+**Alustava ohjelma:**
+
+Aamupäivä (9-11)
 - Oskari 3.0 esittely - mitä uutta & mitä huomioida päivittämisessä? (MML & Sitowise)
+- OAuth2 + Entra ID -käyttö Oskariin kirjautumiseen (Ubigu)
 - Kokemusten jakamista Oskari-tekemisestä teidän organisaatioissanne, käyttötapauksia ym.
+
+Omakustanteinen lounas
+
+Iltapäivä (12-16)
+- Ohjatut työpajat: miten pystytän Oskarin geoportaalin tai RPC-toteutuksen?
 - Vapaata keskustelua
 
-Tapahtumaan voi tulla kysymään Oskarin kehittämisestä, kertoa omista projekteista ja yleisesti jutella muiden Oskari-kehittäjien kanssa esimerkiksi siitä, mitä on viimeksi oppinut Oskarin kehittämisestä. Tapahtuma järjestetään suomeksi.
+
+Tapahtumaan voi tulla kysymään Oskarin kehittämisestä, kertoa omista projekteista ja yleisesti jutella muiden Oskari-kehittäjien kanssa esimerkiksi siitä, mitä on viimeksi oppinut Oskarin kehittämisestä. Mukaan on tulossa mm. Sitowisen, Ubigun ja Gispon seniorikehittäjiä. Tapahtuma järjestetään suomeksi.
 
 Tämä on erinomainen mahdollisuus osallistua, oppia ja jakaa kokemuksia Oskarin kehittämisestä. Nähdään siellä! 👋
 
@@ -46,14 +54,21 @@ Tämä on erinomainen mahdollisuus osallistua, oppia ja jakaa kokemuksia Oskarin
 
 Whether you're a seasoned pro or just starting your coding journey with Oskari, this day is for you! We welcome Oskari developers both new & old.
 
-The preliminary program of the Developers' Day includes 
-- Workshops for setting up the Oskari geoportal or RPC
+**The preliminary program:**
+
+Morning (9:00-11:00)
 - Oskari 3.0 - what's new & how to update? (NLS FI & Sitowise)
+- Using OAuth2 + Entra ID to sign up to Oskari (Ubigu)
 - Sharing the latest Oskari-related work in your organizations, use cases, etc.
+
+Self-paid lunch
+
+Afternoon (12:00-16:00)
+- Guided workshops: How do I set up the Oskari geoportal or RPC?
 - Open discussion
 
 
-Feel free to ask any questions about developing Oskari, share your projects, or discuss others — for example, the latest thing you learned. The event will be held in Finnish.
+Feel free to ask any questions about developing Oskari, share your projects, or discuss others — for example, the latest thing you learned. Senior developers from Sitowise, Ubigu and Gispo are also joining the event. The event will be held in Finnish.
 
 This is a great opportunity to collaborate, learn, and share insights. We look forward to seeing you there! 👋 
 
