@@ -15,38 +15,47 @@ const COMMERCIAL_SUPPORT = [
   {
     name: 'Advian',
     url: 'https://www.advian.fi/',
+    text: 'Advian specializes in refined analytics, location information and artificial intelligence, providing solutions across various industries. We develop intelligent solutions that utilize data and automation to improve efficiency. Advian\'s service offering includes the implementation, development, and integration of Oskari platforms, as well as related maintenance services.'
   },
   {
     name: 'CGI Finland',
     url: 'https://www.cgi.com/fi/fi',
+    text: ''
   },
   {
-    name: 'Gispo Finland Ltd',
+    name: 'Gispo Finland Ltd.',
     url: 'https://gispo.fi/en/',
+    text: 'Gispo is a full service GIS house that specialises in FOSS4G (Free and Open Source Software for Geospatial) tools. We provide consulting, training and support for many open source geospatial technologies. Gispo develops and maintains solutions built on Oskari, and can also provide training and workshops in setting up and using Oskari.'
   },
   {
     name: 'Hubble',
     url: 'https://hubble.fi/',
+    text: ''
   },
   {
     name: 'Knowit',
     url: 'https://www.knowit.fi/',
+    text: ''
   },
   {
     name: 'Phz Full Stack',
     url: 'https://phz.fi/',
+    text: ''
   },
   {
     name: 'Siili',
     url: 'https://www.siili.com/',
+    text: ''
   },
   {
     name: 'Sitowise',
     url: 'https://www.sitowise.com/',
+    text: ''
   },
   {
     name: 'Ubigu',
     url: 'https://ubigu.fi/en/',
+    text: ''
   },
 ]
 
@@ -173,11 +182,13 @@ export default function CommunityPage() {
         <div>
           <h3>Companies offering commercial support</h3>
           <ul className='list-disc list-inside [&_a]:underline'>
-            {COMMERCIAL_SUPPORT.map(({ name, url }) => (
+            {COMMERCIAL_SUPPORT.map(({ name, url, text }) => (
               <li key={url}>
                 <a href={url} rel='noreferrer nofollow' target='_blank'>
                   {name}
                 </a>
+                <br></br>
+                {text}
               </li>
             ))}
           </ul>

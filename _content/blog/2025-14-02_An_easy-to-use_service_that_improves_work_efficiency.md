@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'An easy-to-use and time-saving service'
+title: 'Geodata portal Paikkatietoikkuna - an easy-to-use and time-saving service'
 excerpt: 'Paikkatietoikkuna is used in work tasks in many fields - how users evaluate the service?'
 date: 2025-02-14 14:00:00 +0200
 categories: [use cases]
@@ -8,7 +8,7 @@ tags:
   - blog
 ---
 
-**A guest blog initially published in [Maanmittauslaitos.fi](https://www.maanmittauslaitos.fi/palvelutiedotteet/paikkatietoikkunaa-hyodynnetaan-tyotehtavissa-useilla-aloilla-nain-kayttajat) in 5.2.2025.**
+**A guest blog initially published in [Maanmittauslaitos.fi](https://www.maanmittauslaitos.fi/palvelutiedotteet/paikkatietoikkunaa-hyodynnetaan-tyotehtavissa-useilla-aloilla-nain-kayttajat) in 5.2.2025. Written by Hanna Horppila.**
 
 ![A photograph of Paikkatietoikkuna user - copyright NLS FI 2025](/resources/2025/MMLI-PTI.jpg)
 *A photograph of Paikkatietoikkuna user - copyright NLS FI 2025*
