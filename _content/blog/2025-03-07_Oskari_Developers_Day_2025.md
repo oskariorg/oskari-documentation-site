@@ -34,6 +34,7 @@ Omakustanteinen lounas
 
 Iltapäivä (12-16)
 - Oskari 3.0 - mitä huomioida päivittämisessä? (Sitowise) 
+- Julkaisija Reactiksi (Siili)
 - Ohjatut työpajat: miten pystytän Oskarin geoportaalin tai RPC-toteutuksen?
 - Vapaata keskustelua
 
@@ -70,6 +71,7 @@ Self-paid lunch
 
 Afternoon (12:00-16:00)
 - Oskari 3.0. - how to update? (Sitowise)
+- Publisher to React (Siili)
 - Guided workshops: How do I set up the Oskari geoportal or RPC?
 - Open discussion
 
