@@ -28,6 +28,7 @@ Aamupäivä (9-11)
 - Oskari 3.0 esittely - mitä uutta? (MML)
 - OAuth2 + Entra ID -käyttö Oskariin kirjautumiseen (Ubigu)
 - RPC-toiminnallisuuden laajentaminen (Gispo)
+- Metatietojen hallinta Geoserverin CSW-lisäosan sekä FME:n avulla (Väylävirasto & Sitowise)
 - Kokemusten jakamista Oskari-tekemisestä teidän organisaatioissanne, käyttötapauksia ym.
 
 Omakustanteinen lounas
