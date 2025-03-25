@@ -3,8 +3,9 @@ import { redirect } from 'next/navigation'
 export default async function VersionPage({
   params,
 }: {
-  params: { version: string }
+  params: Promise<{ version: string }>
 }) {
-  const indexJSON = await getVersionIndex(params.version);
-  redirect('/documentation/docs/' + params.version + '/' + indexJSON[0].slug);
+  const { version } = await params;
+  const indexJSON = await getVersionIndex(version);
+  redirect('/documentation/docs/' + version + '/' + indexJSON[0].slug);
 }

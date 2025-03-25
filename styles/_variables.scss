@@ -1,5 +1,7 @@
 :root {
   // COLORS
+  & {
+    
   --color-text: #222222;
   --color-dark: #222222;
   --color-light: #fff;
@@ -20,18 +22,20 @@
   --container-width: 1920px;
   --container-content-width: 90rem; // 1440px on 16px base
   --navigation-height: 5rem;
-  --content-padding: 1.5rem;
+  --content-padding: 1.5rem; 
+  }
   @media screen and (max-width: 1280px) {
     grid-template-columns: 1.5fr 1fr;
     --navigation-height: 5rem;
   }
+  & {
+    // BREAKPOINTS
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
 
-  // BREAKPOINTS
-  --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
-
-  // MISC
-  --box-shadow: -5px 0px 5px rgba(0, 0, 0, 0.1);
+    // MISC
+    --box-shadow: -5px 0px 5px rgba(0, 0, 0, 0.1);
+  }
 }

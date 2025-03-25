@@ -9,24 +9,25 @@ import path from 'path';
 export default async function RequestsContentPage({
   params
 }: {
-  params: { version: string, slug: string }
+  params: Promise<{ version: string, slug: string }>
 }) {
 
-  const basePath = '_content/api/versions/' + params.version + '/';
-  const requests = (await import('_content/api/versions/' + params.version + '/requests.json')).default;
-  const requestsBaseRef = '/documentation/api/requests/' + params.version + '/';
+  const { version, slug } = await params;
+  const basePath = '_content/api/versions/' + version + '/';
+  const requests = (await import('_content/api/versions/' + version + '/requests.json')).default;
+  const requestsBaseRef = '/documentation/api/requests/' + version + '/';
 
-  const foundItem = requests.find((element: OskariEventOrRequest) => slugify(element.name) === params.slug);
+  const foundItem = requests.find((element: OskariEventOrRequest) => slugify(element.name) === slug);
   if (!foundItem) {
     return <Error text='No request doc found' code='404' />
   }
 
   const normalized = path.normalize(foundItem.path);
   const imagesRelativePath = normalized.substring(0, normalized.lastIndexOf(path.sep));
-  const imagesPath = '/assets/api/'+params.version+'/'+imagesRelativePath;
+  const imagesPath = '/assets/api/'+version+'/'+imagesRelativePath;
 
   return <ApiSectionContentPage
-    version={params.version}
+    version={version}
     sideBarContent={<EventsAndRequestsSidebarContent title='Select request' elements={requests} baseHref={requestsBaseRef}/>}
     mainContent={<HtmlContentPage mdPath={basePath + '/' + foundItem.path} imagesPath={imagesPath}/>}
     baseHref='/documentation/api/requests/'/>;

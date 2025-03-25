@@ -20,10 +20,10 @@ const getPostBySlug = (slug: string) => {
 export default async function SingleBlogPage({
     params,
   }: {
-    params: { slug: string }
+    params: Promise<{ slug: string }>
   }) {
-
-    const post = getPostBySlug(params.slug);
+    const { slug } = await params;
+    const post = getPostBySlug(slug);
     if (!post?.path) {
         return <Error text='No blog posts found' code='404' />
     }
