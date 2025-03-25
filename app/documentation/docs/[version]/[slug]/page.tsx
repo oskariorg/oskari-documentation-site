@@ -17,10 +17,11 @@ let indexJSON: { [key: string]: MarkdownFileMetadata[] } = {};
 export const generateMetadata = async ({
   params,
 }: {
-  params: { slug: string; version: string }
+  params: Promise<{ version: string, slug: string }>
 }) => {
-  await initIndexJSON(params.version)
-  const section = indexJSON[params.version]?.find((item: MarkdownFileMetadata) => item.slug === params.slug);
+  const { version, slug } = await params;
+  await initIndexJSON(version)
+  const section = indexJSON[version]?.find((item: MarkdownFileMetadata) => item.slug === slug);
 
   if (section) {
     return { title: section.title }
@@ -40,13 +41,13 @@ const initIndexJSON = async (version: string) => {
 export default async function SingleDocPage({
   params,
 }: {
-  params: { slug: string; version: string }
+  params: Promise<{ version: string, slug: string }>
 }) {
 
 
-  const { version } = params;
-  await initIndexJSON(params.version)
-  const activeSection = indexJSON[version]?.find((item: MarkdownFileMetadata) => item.slug === params.slug);
+  const { version, slug } = await params;
+  await initIndexJSON(version)
+  const activeSection = indexJSON[version]?.find((item: MarkdownFileMetadata) => item.slug === slug);
   const path = activeSection?.children[0].path;
   if (!activeSection || !path) {
     return <Error text='No documents found' code='404' />;
@@ -62,9 +63,9 @@ export default async function SingleDocPage({
 
   return <>
     <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
-      <VersionSidebar selectedVersion={params.version} versions={versions} baseHref='/documentation/docs/' />
+      <VersionSidebar selectedVersion={version} versions={versions} baseHref='/documentation/docs/' />
       <AccordionGroup>
-        <AccordionListWrapper items={indexJSON[params.version]} initialOpenSection={activeSection.slug}/>
+        <AccordionListWrapper items={indexJSON[version]} initialOpenSection={activeSection.slug}/>
       </AccordionGroup>
     </div>
     <div>
