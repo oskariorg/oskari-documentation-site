@@ -13,7 +13,8 @@
     "docsmetadata": "node scripts/generateDocumentationMetadata.js",
     "apidocs": "node scripts/generateApidocs.js",
     "db": "java -jar ./schemaspy/schemaspy-6.2.4.jar -configFile ./schemaspy/conf.properties -dp ./schemaspy/postgresql-42.7.3.jar -o public/db/",
-    "test": "jest"
+    "test": "jest",
+    "generate-bom": "cyclonedx-bom --include-dev -o bom.json"
   },
   "browser": {
     "fs": false,
@@ -48,6 +49,7 @@
     "typescript": "^5.1.6"
   },
   "devDependencies": {
+    "@cyclonedx/bom": "^3.10.1",
     "@types/jest": "^29.5.12",
     "@types/react-slick": "^0.23.10",
     "@typescript-eslint/eslint-plugin": "^6.6.0",
