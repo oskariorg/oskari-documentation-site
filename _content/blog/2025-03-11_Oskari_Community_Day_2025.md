@@ -20,7 +20,7 @@ tags:
 
 📍 Osoite: Pasilan virastotalo, 2. krs, Kokouskeskus (MML:n tilat, Helsinki)
 
-Oskarin verkostopäivä järjestetään taas toukokuussa Helsingissä. Tapahtumaan ovat tervetulleita Oskari-verkoston jäsenet, kaikki Oskarin käyttävät sekä käyttöönottoa pohtivat organisaatiot. Laita tapahtuma jo kalenteriin ja ilmoittaudu mukaan!
+Oskarin verkostopäivä järjestetään taas toukokuussa Helsingissä. Tapahtumaan ovat tervetulleita Oskari-verkoston jäsenet, kaikki Oskarin käyttävät sekä käyttöönottoa pohtivat organisaatiot. Laita tapahtuma jo kalenteriin ja ilmoittaudu mukaan! Tapahtuman jälkeen mahdollisuus jatkaa keskustelua GeoBeersien merkeissä vieressä olevan Mall of Triplan oluthuone Ratamossa.
 
 Alustava ohjelma:
 - Oskari 3.0 demo
@@ -40,7 +40,7 @@ Alustava ohjelma:
 
 📍 Address: Pasilan virastotalo, 2nd floor, Kokouskeskus (NLS FI facilities, Helsinki)
 
-Oskari Community Day will be held again in May in Helsinki. The members of Oskari's Joint Development Forum, organisations that use Oskari and the organisations that are interested in the possibilities of Oskari all warmly welcome. Save the date & sign up!
+Oskari Community Day will be held again in May in Helsinki. The members of Oskari's Joint Development Forum, organisations that use Oskari and the organisations that are interested in the possibilities of Oskari all warmly welcome. Save the date & sign up! After the event there is also a chance to have geobeers in the nearby Mall of Tripla at beer house Ratamo.
 
 The preliminary program: 
 - Oskari 3.0 demo
