@@ -28,20 +28,18 @@ Aamupäivä (9-11)
 - Oskari 3.0 esittely - mitä uutta? (Sami Mäkinen, MML)
 - OAuth2 + Entra ID -käyttö Oskariin kirjautumiseen (Janne Heikkilä, Ubigu)
 - RPC-toiminnallisuuden laajentaminen (Timo Aarnio, Gispo)
-- Metatietojen hallinta Geoserverin CSW-lisäosan sekä FME:n avulla (Arttu Pietarinen, Väylävirasto & Sitowise)
+- Metatietojen hallinta Geoserverin CSW-lisäosan sekä FME:n avulla (Arttu Pietarinen, Sitowise)
 - Kokemusten jakamista Oskari-tekemisestä teidän organisaatioissanne, käyttötapauksia ym.
 
 Omakustanteinen lounas (pöytä varattu osallistujille)
 
 Iltapäivä (12-16)
-- Oskari 3.0 - mitä huomioida päivittämisessä? (Oskari Rintamäki, Sitowise) 
+- Oskari 3.0 - mitä huomioida päivittämisessä? (Arttu Pietarinen, Sitowise) 
 - Julkaisija Reactiksi (Pekka Helesuo, Siili)
 - Ohjatut työpajat: miten pystytän Oskarin geoportaalin tai RPC-toteutuksen? (Sami Mäkinen, MML)
 - Vapaata keskustelua
 
 **[Saapumisohjeet](https://www.sitowise.com/fi/yhteystiedot/toimipisteet/sitowise-espoo)**
-
-**Tarvittaessa ota yhteyttä Juhoon 044-3097444, juho@gispo.fi.**
 
 Tapahtumaan voi tulla kysymään Oskarin kehittämisestä, kertoa omista projekteista ja yleisesti jutella muiden Oskari-kehittäjien kanssa esimerkiksi siitä, mitä on viimeksi oppinut Oskarin kehittämisestä. Tapahtuma järjestetään suomeksi.
 
@@ -67,7 +65,7 @@ Morning (9:00-11:00)
 - Oskari 3.0 - what's new? (NLS FI)
 - Using OAuth2 + Entra ID to sign up to Oskari (Ubigu)
 - Expanding the RPC functionality (Gispo)
-- Controlling metadata using FME and the CSW plugin of GeoServer (Väylävirasto & Sitowise)
+- Controlling metadata using FME and the CSW plugin of GeoServer (Sitowise)
 - Sharing the latest Oskari-related work in your organizations, use cases, etc.
 
 Self-paid lunch
