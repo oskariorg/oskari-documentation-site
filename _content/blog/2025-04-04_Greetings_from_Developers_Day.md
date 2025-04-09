@@ -57,7 +57,7 @@ Arttu Pietarinen from Sitowise presented the process where a CSW plugin was inst
 
 ## Oskari 3.0. updating project between Sitowise, Finnish Transport Infrastructure Agency and MML
 
-The participants of Developers’ Day also heard about the developers' experiences with the update process for 3.0 released in March. The work involved four people and testers from the National Land Survey of Finland, as well as two developers from Sitowise and Sitowise's own tester.
+The participants of Developers’ Day also heard about the developers' experiences with the co-operation of two separate software development teams across two organizations, working together to get everything ready for the Oskari 3.0 released in March. The work involved four people and testers from the National Land Survey of Finland, as well as two developers from Sitowise and Sitowise's own tester.
 
 The collaboration was based on the mutual needs of NLS FI, Finnish Transport Infrastructure Agency and Sitowise. The National Land Survey of Finland needed to update the Java and Spring major versions of Oskari, while Sitowise has several Oskari instances under maintenance and development, including the Finnish Transport Infrastructure Agency's Oskari project, where concerns were raised about Oskari's security vulnerabilities. Major updates contain easily destructible changes, and via the joint project, Sitowise was able to find and fix them, too.
 
