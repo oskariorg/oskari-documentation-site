@@ -2,7 +2,7 @@
 layout: post
 title: "Greetings from Developers' Day 2025!"
 excerpt: "Oskari developers got together in April to share information and experiences about working with Oskari."
-date: 2025-03-07 11:30:00 +0200
+date: 2025-04-04 12:00:00 +0200
 categories: [developing, event]
 tags:
   - blog
