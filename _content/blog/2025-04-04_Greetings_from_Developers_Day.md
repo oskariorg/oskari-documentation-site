@@ -25,7 +25,7 @@ A major leap was also that creating bundles was made significantly easier. Now a
 
 Pekka Helesuo from Siili presented the changes made to the map publisher. The old jQuery code has been converted to React in many parts and the documentation on the subject has also been updated regarding the changes.
 
-However, jQuery can still be found in Oskari, and for example, the Drag and drop-based moving of tools in the map publisher has been implemented from there. However, the React migration was advanced so much that the work on Oskari 3.0 is at a fairly good stage and many parts have been completed as a good whole. The abandonment of jQuery will continue with the following updates.
+However, jQuery can still be found in Oskari, and for example, the Drag and drop-based moving of tools in the map publisher has been implemented with jQuery. However, the React migration was advanced so much that the work on Oskari 3.0 is at a fairly good stage and many parts have been completed as a good whole. The abandonment of jQuery will continue with the following updates.
 
 The Changelog for version 3.0 can be seen in its entirety here: [front-end](https://github.com/oskariorg/oskari-frontend/blob/master/ReleaseNotes.md), [server](https://github.com/oskariorg/oskari-server/blob/master/ReleaseNotes.md)
 
