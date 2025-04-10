@@ -33,11 +33,6 @@ const COMMERCIAL_SUPPORT = [
     text: ''
   },
   {
-    name: 'Knowit',
-    url: 'https://www.knowit.fi/',
-    text: ''
-  },
-  {
     name: 'Phz Full Stack',
     url: 'https://phz.fi/',
     text: ''
@@ -45,7 +40,7 @@ const COMMERCIAL_SUPPORT = [
   {
     name: 'Siili',
     url: 'https://www.siili.com/',
-    text: ''
+    text: 'Siili is a full-spectrum digital partner, pioneering AI-driven solutions. We help businesses leverage AI for smarter, faster, and more impactful transformations. Our consultants also develop and implement the Oskari map platform, building intuitive, dynamic mapping solutions. At our core? A thriving community where AI meets humanity. Make AI Real.'
   },
   {
     name: 'Sitowise',
