@@ -30,3 +30,10 @@ h1#Setup-instructions ~ pre.mermaid svg g.person-man rect, h1#Setup-instructions
   /* Use dark green for constrast instead of mermaids colors */
   fill: #307473 !important;
 }
+
+/** ****************************** */
+/* NOTE! Specific to Frontend-framework (section 4) */
+/** ****************************** */
+h1#Frontend-framework ~ pre.mermaid svg .node .label-container {
+  fill: #ffd400 !important;
+}
