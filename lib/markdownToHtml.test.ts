@@ -12,11 +12,15 @@ const createTestHtml = () => {
       const joinedSecond = [first, second].join('.');
       originals.push('<h2>' + joinedSecond + '</h2>')
       expecteds.push('<h2 id="' + joinedSecond + '">' + joinedSecond + ' ' + joinedSecond + '</h2>')
+      // we are testing if we want to remove h3 from navigation, so don't expect them in tests either
+      // this can be removed if we go with the change
+      /*
       for (let third = 1; third < 4; third++) {
         const joinedThird = [first, second, third].join('.');
         originals.push('<h3>' + joinedThird + '</h3>')
         expecteds.push('<h3 id="' + joinedThird + '">' + joinedThird + ' ' + joinedThird + '</h3>')
       }
+      */
     }
   }
 
@@ -59,7 +63,8 @@ describe('markdownToHtml tests', () => {
       const processed = insertIdsToHeaders('<div>' + h1 + h3 + '</div>', '1');
 //      console.log(processed);
       expect(processed?.html?.indexOf('1.0.1')).toBe(-1);
-      expect(processed?.html?.indexOf('1.1.1')).toBeGreaterThan(-1);
+      // also, it skips h3 so there wont be a 1.1.1
+      expect(processed?.html?.indexOf('1.1.1')).toBe(-1);
     })
   });
 
