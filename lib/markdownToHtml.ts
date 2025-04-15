@@ -3,7 +3,8 @@ import slugify from 'slugify';
 import 'highlight.js/scss/a11y-dark.scss';
 
 export const insertIdsToHeaders = (htmlString: string, startingSectionNumber: string) => {
-  const headerRegex = /<h([1-3])>(.*?)<\/h\1>/g
+  // create navigation items for only h1 and h2 tags
+  const headerRegex = /<h([1-2])>(.*?)<\/h\1>/g
   const anchorLinks: Array<DocAnchorLinksType> = []
   const sectionCounter = [parseInt(startingSectionNumber) - 1, 0, 0, 0, 0, 0];
   let previousLevel = parseInt(startingSectionNumber) - 1;
