@@ -37,3 +37,15 @@ h1#Setup-instructions ~ pre.mermaid svg g.person-man rect, h1#Setup-instructions
 h1#Frontend-framework ~ pre.mermaid svg .node .label-container {
   fill: #ffd400 !important;
 }
+
+/** ****************************** */
+/* NOTE! Specific to Configuration instructions (section 8) */
+/** ****************************** */
+h1#Configuration-instructions ~ pre.mermaid svg {
+  /* Make the image larger as generated view box can't be modified by CSS */
+  transform: scale(1.25);
+}
+h1#Configuration-instructions ~ pre.mermaid svg g.person-man rect, h1#Configuration-instructions ~ pre.mermaid svg g.person-man path {
+  /* Use dark green for constrast instead of mermaids colors */
+  fill: #307473 !important;
+}
