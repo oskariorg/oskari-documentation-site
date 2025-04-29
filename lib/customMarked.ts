@@ -42,14 +42,15 @@ const createRenderer = (useSectionNumbering: boolean, startingSectionNumber: str
             }
         }
         previousLevel = intLevel;
-        const slug = slugify(content)
-        const sectionNumber = sectionCounter.slice(0, level).map(sectionNumber => sectionNumber || 1).join('.');
-
-        const sectionNumberContent = useSectionNumbering ? sectionNumber : '';
-        anchorLinks.push({ level: level.toString(), content, slug, sectionNumber });
 
         const tags = content.match(tagRegex);
-        let cleanTitle = content.replace(tagRegex, '');
+        let cleanTitle = content.replace(tagRegex, '').trim();
+
+        const slug = slugify(cleanTitle)
+        const sectionNumber = sectionCounter.slice(0, level).map(sectionNumber => sectionNumber || 1).join('.');
+
+        const sectionNumberContent = useSectionNumbering ? sectionNumber + ' ' : '';
+        anchorLinks.push({ level: level.toString(), content, slug, sectionNumber });
 
         if (tags && tags.length > 0) {
           const badges = tags.map((tag: string) => {
@@ -59,9 +60,9 @@ const createRenderer = (useSectionNumbering: boolean, startingSectionNumber: str
             return null;
           }).filter((badge: string | null) => !!badge);
 
-          cleanTitle = `<h${level} id="${slug}">${sectionNumberContent} ${cleanTitle}${badges.join(' ')}</h${level}>`;
+          cleanTitle = `<h${level} id="${slug}">${sectionNumberContent}${cleanTitle}${badges.join(' ')}</h${level}>`;
         } else {
-          cleanTitle = `<h${level} id="${slug}">${sectionNumberContent} ${cleanTitle}</h${level}>`;
+          cleanTitle = `<h${level} id="${slug}">${sectionNumberContent}${cleanTitle}</h${level}>`;
         }
 
         // additional \r\n needs to be added cos marked is failing in a load of ways,
