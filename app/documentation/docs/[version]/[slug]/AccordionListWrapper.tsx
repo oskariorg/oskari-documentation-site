@@ -20,7 +20,8 @@ export default function AccordionListWrapper({
   ) => {
     return (
       <ul className={styles.accordionMenu}>
-        {items?.map((item, index) => (
+        {items?.filter(item => parseInt(item.level) <= 3)
+        .map((item, index) => (
           <li key={item.slug + '_' + index}>
             <Link
               href={item.slug === parentSlug ? item.slug : parentSlug + '#' + item.slug}
