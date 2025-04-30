@@ -74,7 +74,7 @@ export default async function SingleDocPage({
     <div>
       {activeSection ? (
         <div className='md-content max-w-[70ch] mt-7'>
-          <ApiDocContentWrapper html={activeSection.html}/>
+            <ApiDocContentWrapper html={activeSection.html}/>
         </div>
     ) : (
         <h2>Document not found</h2>

@@ -7,6 +7,7 @@ import '@fortawesome/fontawesome-free/css/solid.min.css';
 import { useEffect } from 'react';
 import mermaid from 'mermaid';
 import { MERMAID_SNIPPET } from '@/lib/customMarked';
+import ScrollSpy from 'react-ui-scrollspy';
 
 export default function ApiDocContentWrapper({html}: {html: string}) {
 
@@ -29,6 +30,8 @@ export default function ApiDocContentWrapper({html}: {html: string}) {
     mermaid.contentLoaded();
   }, [html]);
   return <article>
-    <div className={'apidocContentWrapper'} dangerouslySetInnerHTML={{__html: html}}/>
+    <ScrollSpy onUpdateCallback={(id:string) => { console.log('scrollspy update state: ', id); history.replaceState(null, '', id); }}>
+      <div className={'apidocContentWrapper'} dangerouslySetInnerHTML={{__html: html}}/>
+    </ScrollSpy>
   </article>;
 }

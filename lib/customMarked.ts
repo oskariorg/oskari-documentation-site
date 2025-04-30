@@ -60,9 +60,9 @@ const createRenderer = (useSectionNumbering: boolean, startingSectionNumber: str
             return null;
           }).filter((badge: string | null) => !!badge);
 
-          cleanTitle = `<h${level} id="${slug}">${sectionNumberContent}${cleanTitle}${badges.join(' ')}</h${level}>`;
+          cleanTitle = `<h${level} id="${slug}" data-to-scrollspy-id="${slug}">${sectionNumberContent}${cleanTitle}${badges.join(' ')}</h${level}>`;
         } else {
-          cleanTitle = `<h${level} id="${slug}">${sectionNumberContent}${cleanTitle}</h${level}>`;
+          cleanTitle = `<h${level} id="${slug}" data-to-scrollspy-id="${slug}">${sectionNumberContent}${cleanTitle}</h${level}>`;
         }
 
         // additional \r\n needs to be added cos marked is failing in a load of ways,
