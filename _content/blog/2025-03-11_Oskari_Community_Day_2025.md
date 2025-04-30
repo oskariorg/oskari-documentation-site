@@ -48,7 +48,7 @@ The program:
 - Where does Oskari fit within the organization's geospatial infrastructure? (NLS FI)
 - Who to ask for Oskari development work? (Companies that offer commercial support)
 - Where to find information and support for Oskari? (Juho Rekilä, Gispo Finland Ltd.)
-- Oskari 3.0 - joint development work and Väylä Map (Minna Huovinen, Finnish Transportation Agency)
+- Oskari 3.0 - joint development work and Väylä Map (Minna Huovinen, Finnish Transportation Infrastructure Agency)
 - Choosing the Community member(s) to Oskari JDF
 
 **Sign up for the event [here!](https://docs.google.com/forms/d/e/1FAIpQLSc6Z3OAmb2nCXHQGFBTWNhZWv34Q33x7hwtuR57jutSTwdAzQ/viewform)**
