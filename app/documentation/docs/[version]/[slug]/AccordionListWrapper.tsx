@@ -6,12 +6,16 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { cleanTags } from '@/lib/utils';
 
+export const DEFAULT_NAVIGATION_MAXDEPTH = 3;
+
 export default function AccordionListWrapper({
   items,
-  initialOpenSection
+  initialOpenSection,
+  navigationMaxDepth = DEFAULT_NAVIGATION_MAXDEPTH
 }: {
   items: MarkdownFileMetadata[] | null,
-  initialOpenSection: string
+  initialOpenSection: string,
+  navigationMaxDepth?: number
 }) {
 
   const [openSection, setOpenSection] = useState(initialOpenSection);
@@ -20,7 +24,8 @@ export default function AccordionListWrapper({
   ) => {
     return (
       <ul className={styles.accordionMenu}>
-        {items?.map((item, index) => (
+        {items?.filter(item => parseInt(item.level) <= navigationMaxDepth)
+        .map((item, index) => (
           <li key={item.slug + '_' + index}>
             <Link
               href={item.slug === parentSlug ? item.slug : parentSlug + '#' + item.slug}
