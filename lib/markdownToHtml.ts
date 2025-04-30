@@ -1,4 +1,4 @@
-import { DocAnchorLinksType, MarkdownFileMetadata } from '@/types/types';
+import { MarkdownFileMetadata } from '@/types/types';
 import slugify from 'slugify';
 import 'highlight.js/scss/a11y-dark.scss';
 
