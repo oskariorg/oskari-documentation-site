@@ -50,7 +50,7 @@ const COMMERCIAL_SUPPORT = [
   {
     name: 'Ubigu',
     url: 'https://ubigu.fi/en/',
-    text: ''
+    text: 'All things geospatial are at Ubigu\’s heart. An IT consultancy and software development house, we design everything from processes to hands-on digital solutions as well as build and manage anything related to geospatial information and technology. As long-standing contributors to the Oskari community, we provide our customers with Oskari core and module development, hosting, support and maintenance services.'
   },
 ]
 
