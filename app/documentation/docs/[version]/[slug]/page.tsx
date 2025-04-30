@@ -65,7 +65,10 @@ export default async function SingleDocPage({
     <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
       <VersionSidebar selectedVersion={version} versions={versions} baseHref='/documentation/docs/' />
       <AccordionGroup>
-        <AccordionListWrapper items={indexJSON[version]} initialOpenSection={activeSection.slug}/>
+        <AccordionListWrapper
+          items={indexJSON[version]}
+          initialOpenSection={activeSection.slug}
+          navigationMaxDepth={2}/>
       </AccordionGroup>
     </div>
     <div>
