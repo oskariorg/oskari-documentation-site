@@ -1,4 +1,42 @@
 /* These have very specific selectors so we can modify the generated SVGs per page */
+h2#Application-environment ~ pre.mermaid svg g.mindmap-node.section-root circle.node-bkg {
+  /* Oskari-based service */
+  fill: #ffd400;
+}
+h2#Application-environment ~ h3#Software-overview ~ pre.mermaid svg g.mindmap-node rect.node-bkg.node-no-border,
+h2#Application-environment ~ h3#Software-overview ~ pre.mermaid svg g.mindmap-node path.node-bkg.node-no-border,
+h2#Application-environment ~ h3#Software-overview ~ pre.mermaid svg path.edge.section-edge-0 {
+  /* oskari components */
+  fill: #A3C4BC;
+}
+
+h2#Application-environment ~ h3#Software-overview ~ pre.mermaid svg g.mindmap-node rect.node-bkg.node-rounded-rect,
+h2#Application-environment ~ h3#Software-overview ~ pre.mermaid svg g.mindmap-node path.node-bkg.node-rounded-rect {
+  /* app components */
+  fill: #F4F1DE;
+}
+h2#Application-environment ~ h3#Software-overview ~ pre.mermaid svg path.edge.section-edge-0,
+h2#Application-environment ~ h3#Software-overview ~ pre.mermaid svg path.edge.section-edge-1 {
+  /* app components */
+  stroke: #F4F1DE;
+}
+h2#Application-environment ~ h3#Software-overview ~ pre.mermaid svg g.mindmap-node.section-root text {
+  fill: black;
+}
+h2#Application-environment ~ h3#Data-source-overview ~ pre.mermaid svg g.mindmap-node rect.node-bkg,
+h2#Application-environment ~ h3#Data-source-overview ~ pre.mermaid svg g.mindmap-node path.node-bkg {
+  /* sdi */
+  fill: #d9d9d9;
+  stroke: #d9d9d9;
+}
+h2#Application-environment ~ h3#Data-source-overview ~ pre.mermaid svg path.edge.section-edge-0,
+h2#Application-environment ~ h3#Data-source-overview ~ pre.mermaid svg path.edge.section-edge-1 {
+  /* app components */
+  stroke: #d9d9d9;
+}
+h2#Application-environment ~ h3#Data-source-overview ~ pre.mermaid svg g.mindmap-node.section-root text {
+  fill: black;
+}
 
 /** ****************************** */
 /* NOTE! Specific to Setup-instructions (section 2) */
