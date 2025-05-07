@@ -1,26 +1,45 @@
 /* These have very specific selectors so we can modify the generated SVGs per page */
-
-/** ****************************** */
-/* These are meant to affect section 2:
-   - flowchart
-   - sequenceDiagram
-*/
-/** ****************************** */
-
-h1#Application-environment ~ pre.mermaid svg g rect.actor {
-  fill: #ffd400 !important;
+h2#Application-environment ~ pre.mermaid svg g.mindmap-node.section-root circle.node-bkg {
+  /* Oskari-based service */
+  fill: #ffd400;
+}
+h2#Application-environment ~ h3#Software-overview ~ pre.mermaid svg g.mindmap-node rect.node-bkg.node-no-border,
+h2#Application-environment ~ h3#Software-overview ~ pre.mermaid svg g.mindmap-node path.node-bkg.node-no-border,
+h2#Application-environment ~ h3#Software-overview ~ pre.mermaid svg path.edge.section-edge-0 {
+  /* oskari components */
+  fill: #A3C4BC;
 }
 
-h1#Application-environment ~ pre.mermaid svg g line.actor-line {
-  stroke: #307473 !important;
+h2#Application-environment ~ h3#Software-overview ~ pre.mermaid svg g.mindmap-node rect.node-bkg.node-rounded-rect,
+h2#Application-environment ~ h3#Software-overview ~ pre.mermaid svg g.mindmap-node path.node-bkg.node-rounded-rect {
+  /* app components */
+  fill: #F4F1DE;
 }
-
-h1#Application-environment ~ pre.mermaid svg .node .label-container {
-  fill: #ffd400 !important;
+h2#Application-environment ~ h3#Software-overview ~ pre.mermaid svg path.edge.section-edge-0,
+h2#Application-environment ~ h3#Software-overview ~ pre.mermaid svg path.edge.section-edge-1 {
+  /* app components */
+  stroke: #F4F1DE;
+}
+h2#Application-environment ~ h3#Software-overview ~ pre.mermaid svg g.mindmap-node.section-root text {
+  fill: black;
+}
+h2#Application-environment ~ h3#Data-source-overview ~ pre.mermaid svg g.mindmap-node rect.node-bkg,
+h2#Application-environment ~ h3#Data-source-overview ~ pre.mermaid svg g.mindmap-node path.node-bkg {
+  /* sdi */
+  fill: #d9d9d9;
+  stroke: #d9d9d9;
+}
+h2#Application-environment ~ h3#Data-source-overview ~ pre.mermaid svg path.edge.section-edge-0,
+h2#Application-environment ~ h3#Data-source-overview ~ pre.mermaid svg path.edge.section-edge-1 {
+  /* app components */
+  stroke: #d9d9d9;
+}
+h2#Application-environment ~ h3#Data-source-overview ~ pre.mermaid svg g.mindmap-node.section-root text {
+  fill: black;
 }
 
 /** ****************************** */
-/* NOTE! Specific to Setup-instructions (section 3) */
+/* NOTE! Specific to Setup-instructions (section 2) */
 /** ****************************** */
 h1#Setup-instructions ~ pre.mermaid svg {
   /* Make the image larger as generated view box can't be modified by CSS */
@@ -32,8 +51,22 @@ h1#Setup-instructions ~ pre.mermaid svg g.person-man rect, h1#Setup-instructions
 }
 
 /** ****************************** */
-/* NOTE! Specific to Frontend-framework (section 4) */
+/* NOTE! Specific to Frontend-framework (section 3) */
 /** ****************************** */
+/* These are meant to affect section 3:
+   - flowchart
+   - sequenceDiagram
+*/
+/** ****************************** */
+
+h1#Frontend-framework ~ pre.mermaid svg g rect.actor {
+  fill: #ffd400 !important;
+}
+
+h1#Frontend-framework ~ pre.mermaid svg g line.actor-line {
+  stroke: #307473 !important;
+}
+
 h1#Frontend-framework ~ pre.mermaid svg .node .label-container {
   fill: #ffd400 !important;
 }
