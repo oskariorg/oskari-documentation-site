@@ -25,9 +25,9 @@ Oskarin verkostopäivä järjestetään taas toukokuussa Helsingissä. Tapahtuma
 Ohjelma:
 - Oskari 3.0 demo (Sami Mäkinen, MML)
 - Miten Oskari on osana organisaation paikkatietojärjestelmiä? (MML)
-- Keneltä voi pyytää Oskari-kehittämistä? (Oskari-kehittämistä tarjoavat yritykset)
+- VäyläMappi - Väylätietojen kokoava sisäinen portaali: Uudistamisprojekti (Minna Huovinen, Väylävirasto)
 - Mistä löytää tietoa ja tukea Oskariin? (Juho Rekilä, Gispo Suomi Oy)
-- Oskari 3.0 -yhteiskehittämistyö ja Väylä Map (Minna Huovinen, Väylävirasto)
+- Keneltä voi pyytää Oskari-kehittämistä? (Oskari-kehittämistä tarjoavat yritykset)
 - Oskari-verkoston yhteisöjäsenen/-jäsenten valinta
 
 **Ilmoittaudu mukaan tapahtumaan [tästä!](https://docs.google.com/forms/d/e/1FAIpQLSc6Z3OAmb2nCXHQGFBTWNhZWv34Q33x7hwtuR57jutSTwdAzQ/viewform)**
@@ -46,9 +46,9 @@ Oskari Community Day will be held again in May in Helsinki. The members of Oskar
 The program: 
 - Oskari 3.0 demo (Sami Mäkinen, NLS FI)
 - Where does Oskari fit within the organization's geospatial infrastructure? (NLS FI)
-- Who to ask for Oskari development work? (Companies that offer commercial support)
+- VäyläMappi - Internal Portal for Aggregated Transport Infrastructure Data: Renewal Project (Minna Huovinen, Finnish Transportation Infrastructure Agency)
 - Where to find information and support for Oskari? (Juho Rekilä, Gispo Finland Ltd.)
-- Oskari 3.0 - joint development work and Väylä Map (Minna Huovinen, Finnish Transportation Agency)
+- Who to ask for Oskari development work? (Companies that offer commercial support)
 - Choosing the Community member(s) to Oskari JDF
 
 **Sign up for the event [here!](https://docs.google.com/forms/d/e/1FAIpQLSc6Z3OAmb2nCXHQGFBTWNhZWv34Q33x7hwtuR57jutSTwdAzQ/viewform)**
