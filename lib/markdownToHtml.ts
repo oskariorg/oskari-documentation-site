@@ -66,7 +66,7 @@ const createSlugifiedUrlToAnchor = (url: string, indexJSON: MarkdownFileMetadata
   }
   const urlParts = url.split('/');
   const fileName = urlParts.pop();
-  const directory = urlParts.length > 0 ? urlParts.join('/') : '';
+  const directory = decodeURIComponent(urlParts.length > 0 ? urlParts.join('/') : '');
   const findChildAnchor = (children: MarkdownFileMetadata[], fileName: string) => {
     const child = children.find(child => child.fileName === fileName);
     return child ? child.anchor : null;

@@ -118,6 +118,13 @@ describe("processInternalMDLinks", function() {
     expect(result).toBe("More info [here](section-two#anchor3).");
   });
 
+  it("replaces a relative encoded link with a path and correct link from indexJSON", function() {
+    const markdownContent = "More info [here](../Section%20Two/file3.md).";
+    const activeSectionTitle = "Section One";
+    const result = processInternalMDLinks(markdownContent, indexJSON, activeSectionTitle);
+    expect(result).toBe("More info [here](section-two#anchor3).");
+  });
+
   it("does not replace a link if no matching file is found in indexJSON", function() {
     const markdownContent = "Check this [link](nonexistent.md) in the content.";
     const activeSectionTitle = "Section One";
