@@ -72,6 +72,14 @@ h1#Frontend-framework ~ pre.mermaid svg .node .label-container {
 }
 
 /** ****************************** */
+/* NOTE! Specific to Functionalities (section 5) */
+/** ****************************** */
+h1#Functionalities ~ pre.mermaid svg g.edgeLabels .labelBkg {
+  /* Override the color for linking field */
+  background-color: #A3C4BC;
+}
+
+/** ****************************** */
 /* NOTE! Specific to Configuration instructions (section 8) */
 /** ****************************** */
 h1#Configuration-instructions ~ pre.mermaid svg {
