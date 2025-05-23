@@ -8,6 +8,8 @@ tags:
   - blog
 ---
 
+![A decorative picture for Oskari 3.0.0](/resources/2025/Oskari_300.png)
+
 # 3.0.0 is here!
 
 The new version was released 18th of March and it is available on [GitHub](https://github.com/oskariorg) and Oskari.org Maven repository. The sample application package has been updated on [the download page](https://oskari.org/download) and [the OSGeo website](https://download.osgeo.org/oskari/). As always you can take a peek at the latest release at **https://demo.oskari.org/**
