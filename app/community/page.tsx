@@ -143,21 +143,21 @@ export default function CommunityPage() {
       <div className='py-10'>
         <h2>Joint development forum (JDF)</h2>
         <Text>
-          *What?* Joint Development Forum is a tight group of organisations that have an
+        <strong>What?</strong> Joint Development Forum is a tight group of organisations that have an
           interest in developing Oskari together. By joining the JDF, organizations 
           can support both the Oskari software and its community. The continuity and 
           maintenance of Oskari depends on its active use and on member contributions, 
           and are supported through communication and other means.
         </Text>
         <Text>
-          *Who?* The JDF is formed by several organizational members who pay an annual 
+        <strong>Who?</strong> The JDF is formed by several organizational members who pay an annual 
           fee that covers Oskari's communication, provides technical assistance
           from NLS FI and ensures the ongoing development of the software. Each year, 
           1-2 organizations are selected as community members who may participate in the JDF 
           free of charge. 
         </Text>
         <Text>
-          *How?* The JDF meets monthly, usually via remote meetings. These meetings
+        <strong>How?</strong> The JDF meets monthly, usually via remote meetings. These meetings
           offer opportunities for peer support among Oskari adminstrators,
           proposing topics for discussion, asking difficult questions and 
           influencing Oskari's future direction. JDF members are also the first
