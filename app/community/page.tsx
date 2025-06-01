@@ -166,7 +166,7 @@ export default function CommunityPage() {
           development projects between organizations to enhance the software.
           Finally, the JDF and organizations that are interested in Oskari get together
           for Oskari Community Day once a year to share presentations and discuss all things Oskari.
-          </Text>
+        </Text>
 
         <div className='flex flex-wrap justify-center py-14 gap-x-8 gap-y-16 w-full'>
           {jointLogos.map((logo) => (
