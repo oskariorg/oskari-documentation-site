@@ -70,8 +70,8 @@ export const jointLogos = [
   'hsy.png',
   'nls.png',
   'vayla.png',
-  'joensuu.png'
-  'ubigu.png',
+  'joensuu.png',
+  'ubigu.png'
 ]
 
 export const commitee = [
