@@ -151,7 +151,7 @@ export default function CommunityPage() {
         </Text>
         <Text>
         <strong>Who?</strong> The JDF is formed by several organizational members who pay an annual 
-          fee that covers Oskari's communication, provides technical assistance
+          fee that covers Oskari’s communication, provides technical assistance
           from NLS FI and ensures the ongoing development of the software. Each year, 
           1-2 organizations are selected as community members who may participate in the JDF 
           free of charge. 
@@ -160,7 +160,7 @@ export default function CommunityPage() {
         <strong>How?</strong> The JDF meets monthly, usually via remote meetings. These meetings
           offer opportunities for peer support among Oskari adminstrators,
           proposing topics for discussion, asking difficult questions and 
-          influencing Oskari's future direction. JDF members are also the first
+          influencing Oskari’s future direction. JDF members are also the first
           to hear about the latest features of Oskari. And as the name, Joint 
           Development Forum, suggests the meetings provide a platform for planing joint 
           development projects between organizations to enhance the software.
