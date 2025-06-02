@@ -141,14 +141,33 @@ export default function CommunityPage() {
         </div>
       </div>
       <div className='py-10'>
-        <h2>Joint development forum</h2>
+        <h2>Joint development forum (JDF)</h2>
         <Text>
-          Joint Development Forum is a tight group of organisations that have an
-          interest in developing Oskari together. It is formed by several
-          organisational members providing funding for joint development,
-          communication and bug fixing.
+        <strong>What?</strong> Joint Development Forum is a tight group of organisations that have an
+          interest in developing Oskari together. By joining the JDF, organizations 
+          can support both the Oskari software and its community. The continuity and 
+          maintenance of Oskari depends on its active use and on member contributions, 
+          and are supported through communication and other means.
         </Text>
-        <Text>Joint Development Forum, JDF, meets on a monthly basis.</Text>
+        <Text>
+        <strong>Who?</strong> The JDF is formed by several organizational members who pay an annual 
+          fee that covers Oskari’s communication, provides technical assistance
+          from NLS FI and ensures the ongoing development of the software. Each year, 
+          1-2 organizations are selected as community members who may participate in the JDF 
+          free of charge. 
+        </Text>
+        <Text>
+        <strong>How?</strong> The JDF meets monthly, usually via remote meetings. These meetings
+          offer opportunities for peer support among Oskari adminstrators,
+          proposing topics for discussion, asking difficult questions and 
+          influencing Oskari’s future direction. Members can share with the community lessons learned, 
+          best practices and get to hear about the latest updates to Oskari. 
+          And as the name, Joint Development Forum, suggests the meetings provide a platform for planning joint 
+          development projects between organizations to enhance the software.
+          Finally, the JDF and any other organizations and people that are interested in Oskari get together
+          for Oskari Community Day once a year to share presentations and discuss all things Oskari.
+        </Text>
+
         <div className='flex flex-wrap justify-center py-14 gap-x-8 gap-y-16 w-full'>
           {jointLogos.map((logo) => (
             <Image
