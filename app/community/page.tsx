@@ -160,11 +160,11 @@ export default function CommunityPage() {
         <strong>How?</strong> The JDF meets monthly, usually via remote meetings. These meetings
           offer opportunities for peer support among Oskari adminstrators,
           proposing topics for discussion, asking difficult questions and 
-          influencing Oskari’s future direction. JDF members are also the first
-          to hear about the latest features of Oskari. And as the name, Joint 
-          Development Forum, suggests the meetings provide a platform for planing joint 
+          influencing Oskari’s future direction. Members can share with the community lessons learned, 
+          best practices and get to hear about the latest updates to Oskari. 
+          And as the name, Joint Development Forum, suggests the meetings provide a platform for planning joint 
           development projects between organizations to enhance the software.
-          Finally, the JDF and organizations that are interested in Oskari get together
+          Finally, the JDF and any other organizations and people that are interested in Oskari get together
           for Oskari Community Day once a year to share presentations and discuss all things Oskari.
         </Text>
 
