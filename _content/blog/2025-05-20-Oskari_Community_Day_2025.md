@@ -8,7 +8,7 @@ tags:
   - blog
 ---
 
-![A photograph from the event. Taken by Riikka Kivekäs.](/resources/2025/oskari_community_day_2025.png)
+![A photograph from the event. Taken by Riikka Kivekäs.](/resources/2025/oskari_community_day_2025.jpeg)
 
 # Highlights from The Oskari Community Day 2025 
 
@@ -25,7 +25,7 @@ Lounaistieto, for example, uses quite a basic Oskari geoportal that allows the u
 The City of Joensuu uses Oskari to bring together data from various sources, mostly within their own organization, but also from many other data producers. Technically, the sources include their own Municipal Information System that is based on Trimble Locus, data from NLS FI and Finnish Environmental Institute, and their own GeoServer instance. In total the city has published around 300 map layers in Oskari.
 
 National Land Survey, on the other hand, has 5 separate Oskari geoportal instances and, in addition, several map services that utilize the RPC functionality and are published from one of these geoportals. The most critical data used in their  Oskari instances is produced within the organization, yet in numbers most of the map layers come from outside sources. Of course, maintaining such a vast amount of layers requires a tight scrutiny where the availability of layers is monitored.
-Minna Huovinen from The Finnish Transport Agency gave a presentation about the development process of their Oskari service, VäyläMappi. The insightful presentation will be later on worked to be its own blog post.
+Minna Huovinen from The Finnish Transport Agency gave a presentation about the development process of their Oskari service, VäyläMappi.
 
 ## Where to find information and support for Oskari? 
 
@@ -42,5 +42,5 @@ During the Community Day the new community members for the JDF were selected: Ub
 
 All in all, the event was inspiring, and the presentations sparked interesting discussions. A big thank you to everyone who joined, presented, asked questions, or just dropped by to listen. See you again in the next Oskari meeting!
 
-![A photograph of the Oskari Otter. A photograph by Riikka Kivekäs.](/resources/2025/oskari_otter.png)
+![A photograph of the Oskari Otter. A photograph by Riikka Kivekäs.](/resources/2025/oskari_otter.jpeg)
 The good old Oskari otter was also present in the event.
