@@ -8,7 +8,7 @@ tags:
   - blog
 ---
 
-![A photograph from the event. Taken by Riikka Kivekäs.](/resources/2025/oskari_community_day_2025.png)
+![A photograph from the event. Taken by Riikka Kivekäs.](/resources/2025/oskari_community_day_2025.jpeg)
 
 # Highlights from The Oskari Community Day 2025 
 
@@ -42,5 +42,5 @@ During the Community Day the new community members for the JDF were selected: Ub
 
 All in all, the event was inspiring, and the presentations sparked interesting discussions. A big thank you to everyone who joined, presented, asked questions, or just dropped by to listen. See you again in the next Oskari meeting!
 
-![A photograph of the Oskari Otter. A photograph by Riikka Kivekäs.](/resources/2025/oskari_otter.png)
+![A photograph of the Oskari Otter. A photograph by Riikka Kivekäs.](/resources/2025/oskari_otter.jpeg)
 The good old Oskari otter was also present in the event.
