@@ -4,10 +4,10 @@ import { Metadata } from 'next'
 import HighlightBox from '@/components/HighlightBox'
 import Button from '@/components/Button'
 import Link from 'next/link'
-import DiscoverPage from '../page'
 export const metadata: Metadata = {
   title: 'Getting Started',
 }
+
 
 export default function GettingStartedPage() {
   return (
