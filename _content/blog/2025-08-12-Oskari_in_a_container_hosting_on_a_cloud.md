@@ -33,6 +33,8 @@ Also, what makes Docker images attractive to some is the way the setting up of t
 
 However, using Oskari in a container does not necessarily mean that the service should be moved to the cloud platform. The container solution can still be beneficial in other ways. Using a container can make the developers' work easier if, for example, the developing team has a shared container solution of a software that is used for local Oskari development and testing. Another standardized container can be used for production use and intended for a specific cloud platform, making the maintenance and setting up of map services easier.
 
+![A decorative picture including Oskari and Docker logos on clouds. The original photograph by Vladimir Anikeev on Unsplash.](/resources/2025/oskari_cloud.png)
+      
 ## Why to run Oskari on a cloud platform?
 
 In its simplest form, using Oskari in a cloud platform would mean packaging the software into a single container which is then hosted on, for example, Microsoft's Azure or Amazon's AWS. The end user or the administrator of the service might not even notice the transition to the cloud platform.
