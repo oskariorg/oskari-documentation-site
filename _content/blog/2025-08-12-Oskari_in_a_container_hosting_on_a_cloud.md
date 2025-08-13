@@ -11,7 +11,7 @@ tags:
 
 # Oskari in container and hosting on a cloud platform
 
-Some organizations have begun to use Oskari in a container on a cloud platform. For example, the city of Tampere uses Oskari as a container in Amazon's AWS service. The topic was discussed at the meeting of Oskari JDF in June and in this article we will cover the topic at a general level.
+Some organizations have begun to use Oskari in a container on a cloud platform. For example, the city of Tampere runs Oskari using a container technology in Amazon's AWS service. The topic was discussed at the meeting of Oskari JDF in June and in this article we will cover the topic at a general level.
 
 # What are cloud platforms? What are containers?
 
