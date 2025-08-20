@@ -13,7 +13,7 @@ tags:
 
 Some organizations have begun to use Oskari in a container on a cloud platform. For example, the city of Tampere runs Oskari using a container technology in Amazon's AWS service. The topic was discussed at the meeting of Oskari JDF in June and in this article we will cover the topic at a general level.
 
-# What are cloud platforms? What are containers?
+## What are cloud platforms? What are containers?
 
 The most well-known cloud services at the moment are probably Amazon's AWS and Microsoft's Azure. They host services set up by their customers and offer various additional services related to the hosting. Often the customer buys a dedicated server for their service, but it is also possible to put the service in a container that is set up on a shared server. Doing so the price of the service can be reduced.
 
