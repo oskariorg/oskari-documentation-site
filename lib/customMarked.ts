@@ -18,7 +18,11 @@ export const BADGE_TEMPLATES: {[key: string]: string} = {
     '[rpc]': '<span class="label label-primary rpc" title="Available via RPC">RPC</span>',
 };
 
-const createRenderer = (useSectionNumbering: boolean, startingSectionNumber: string, anchorLinks: Array<DocAnchorLinksType>) => {
+const createRenderer = (
+  useSectionNumbering: boolean,
+  startingSectionNumber: string,
+  anchorLinks: Array<DocAnchorLinksType>,
+  imagesRuntimePath: string) => {
     const renderer = new marked.Renderer();
     const sectionCounter = [parseInt(startingSectionNumber) - 1, 0, 0, 0, 0, 0];
     let previousLevel = parseInt(startingSectionNumber) - 1;
@@ -70,15 +74,29 @@ const createRenderer = (useSectionNumbering: boolean, startingSectionNumber: str
         return cleanTitle + '\r\n';
     }
 
+    renderer.image = (href, title, text): string => {
+      if (imagesRuntimePath && imagesRuntimePath !== '') {
+        if (href.indexOf('resources') > -1) {
+          const pathStartRegex = /^.*?\/resources\//;
+          const replacedImagePath = href.replace(pathStartRegex, imagesRuntimePath);
+          return `<img src="${replacedImagePath}" alt="${text}"/>`;
+        }
+
+        return `<img src="${imagesRuntimePath + '/' + href}" alt="${text}"/>`;
+      }
+
+      return (`<img src=${href} alt=${text}/>`);
+    }
+
     return renderer;
 }
 
 
-export const mdToHtml = (src: string, useSectionNumbering: boolean = false, startingSectionNumber: string = '1') => {
+export const mdToHtml = (src: string, useSectionNumbering: boolean = false, startingSectionNumber: string = '1', imagesRuntimePath: string = '') => {
     // Just a wrapper for marker renderer so we could tune how different html-tags are processed
     // but most of the special handling is in markdownToHtml.ts
     const anchorLinks: Array<DocAnchorLinksType> = [];
-    const renderer = createRenderer(useSectionNumbering, startingSectionNumber, anchorLinks);
+    const renderer = createRenderer(useSectionNumbering, startingSectionNumber, anchorLinks, imagesRuntimePath);
     const html = marked(src, { renderer: renderer });
     return {
         html,
