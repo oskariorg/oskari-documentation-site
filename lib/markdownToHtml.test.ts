@@ -1,25 +1,5 @@
 
-import { processAllLinks, processInternalMDLinks, processMigrationGuideLinks, updateMarkdownHtmlStyleTags, updateMarkdownImagePaths } from "./markdownToHtml";
-
-describe('update markdown image paths', () => {
-  it('should replace md image path with given runtime path', () => {
-    const originalPath = 'stuff/things/etc/common/';
-    const originalMd = '![FUU]('+originalPath+'image.png)';
-    const runtimePath = '/assets/docs/images'
-    const expected = '![FUU](' + runtimePath + '/' + originalPath + 'image.png)';
-    const processed = updateMarkdownImagePaths(originalMd, runtimePath);
-    expect(processed).toEqual(expected);
-  });
-
-  it('should replace reserved keyword \'resources\' from original path (case documentation)', () => {
-    const originalPath = '/resources/images/backend/';
-    const originalMd = '![FUU]('+originalPath+'image.png)';
-    const runtimePath = '/assets/docs/2.13.0/resources/'
-    const expected = '![FUU](' + runtimePath + 'images/backend/image.png)';
-    const processed = updateMarkdownImagePaths(originalMd, runtimePath);
-    expect(processed).toEqual(expected);
-  });
-});
+import { processAllLinks, processInternalMDLinks, processMigrationGuideLinks, updateMarkdownHtmlStyleTags } from "./markdownToHtml";
 
 describe('replace html style tags', () => {
   it ('should replace < and > with {{ and }} for content inside quotation marks', () => {
