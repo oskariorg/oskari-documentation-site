@@ -240,6 +240,8 @@ Usually customisations are made using Oskari&apos;s sample application (Oskari o
 What Oskari enables now and what you wish it enables in the future? There are various different ways to customise Oskari, and the amount of time/money depends on the need.
 </Text>
 
+<Text>When procuring configurations for your Oskari instance, it is advisable to review the development in different stages of the process to test the instance, provide feedback, and further progress the development process. By seeing the work-in-progress versions and following the development as it happens (for example, in weekly meetings), you can achieve a better end product.</Text>
+
 <Text>
 <b><Link href='/documentation/docs/latest/1-Introduction#Requirements-for-developing-Oskari'>The requirements for developing Oskari (programming languages) have been listed in the Introduction section of Oskari&apos;s documentation.</Link></b> The introduction will also give you an overview of Oskari’s architecture and the general idea of when it is required to develop Oskari’s front-end and when the back-end.
 </Text>
