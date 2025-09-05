@@ -17,6 +17,7 @@ export const BADGE_TEMPLATES: {[key: string]: string} = {
     '[breaking]': '<span class="label label-primary breaking" title="Breaking change. Not backwards compatible."><i class="fa-solid fa-triangle-exclamation"></i></span>',
     '[rpc]': '<span class="label label-primary rpc" title="Available via RPC">RPC</span>',
 };
+const HREF_BUTTON_TITLE = "Link to section";
 
 const createRenderer = (useSectionNumbering: boolean, startingSectionNumber: string, anchorLinks: Array<DocAnchorLinksType>) => {
     const renderer = new marked.Renderer();
@@ -44,26 +45,36 @@ const createRenderer = (useSectionNumbering: boolean, startingSectionNumber: str
         previousLevel = intLevel;
 
         const tags = content.match(tagRegex);
-        let cleanTitle = content.replace(tagRegex, '').trim();
+        const titleText = content.replace(tagRegex, '').trim();
 
-        const slug = slugify(cleanTitle)
+        const slug = slugify(titleText)
         const sectionNumber = sectionCounter.slice(0, level).map(sectionNumber => sectionNumber || 1).join('.');
 
         const sectionNumberContent = useSectionNumbering ? sectionNumber + ' ' : '';
         anchorLinks.push({ level: level.toString(), content, slug, sectionNumber });
 
+        let badges: (string | null)[] = [];
         if (tags && tags.length > 0) {
-          const badges = tags.map((tag: string) => {
+          badges = tags.map((tag: string) => {
             if (!!BADGE_TEMPLATES[tag.toLowerCase()]) {
               return BADGE_TEMPLATES[tag.toLowerCase()];
             }
             return null;
           }).filter((badge: string | null) => !!badge);
-
-          cleanTitle = `<h${level} id="${slug}">${sectionNumberContent}${cleanTitle}${badges.join(' ')}</h${level}>`;
-        } else {
-          cleanTitle = `<h${level} id="${slug}">${sectionNumberContent}${cleanTitle}</h${level}>`;
         }
+
+        let cleanTitle = `<h${level} id="${slug}">`;
+        cleanTitle += `${sectionNumberContent}${titleText}${badges?.join(' ') || ''}`;
+
+        // when there are numbered headings (case documentation) additional link-button is added
+        if (useSectionNumbering) {
+          cleanTitle +=
+            `<button title="${HREF_BUTTON_TITLE}" class="updateHrefButton" onclick="window.location.hash = '${slug}'">
+              <i class="fa-regular fa-link"></i>
+            </button>`;
+        }
+
+        cleanTitle += `</h${level}>`;
 
         // additional \r\n needs to be added cos marked is failing in a load of ways,
         // when the first element after heading is a link or a list or whatnot and this is missing in source.

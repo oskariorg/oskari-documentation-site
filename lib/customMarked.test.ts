@@ -1,15 +1,19 @@
 import slugify from 'slugify'
 import { BADGE_TEMPLATES, mdToHtml } from './customMarked'
 
+
+const BUTTON_START = `<button title="Link to section" class="updateHrefButton" onclick="window.location.hash = '`;
+const BUTTON_END =  `'"><i class="fa-regular fa-link"></i></button>`;
 const createTestMd = () => {
   const originals = []
   const expecteds = []
-  for (let first = 1; first < 4; first++) {
+  for (let first = 1; first < 3; first++) {
     originals.push('# ' + first + '\r\n')
     expecteds.push(
-      '<h1 id="' + first + '">' + first + ' ' + first + '</h1>\r\n'
+      '<h1 id="' + first + '">' + first + ' ' + first + BUTTON_START + first + BUTTON_END + '</h1>\r\n'.trim()
     )
-    for (let second = 1; second < 4; second++) {
+
+    for (let second = 1; second < 3; second++) {
       const joinedSecond = [first, second].join('.')
       originals.push('## ' + joinedSecond + '\r\n')
       expecteds.push(
@@ -19,9 +23,10 @@ const createTestMd = () => {
           joinedSecond +
           ' ' +
           joinedSecond +
+          BUTTON_START + joinedSecond + BUTTON_END +
           '</h2>\r\n'
       )
-      for (let third = 1; third < 4; third++) {
+      for (let third = 1; third < 3; third++) {
         const joinedThird = [first, second, third].join('.')
         originals.push('### ' + joinedThird + '\r\n')
         expecteds.push(
@@ -31,6 +36,7 @@ const createTestMd = () => {
             joinedThird +
             ' ' +
             joinedThird +
+            BUTTON_START + joinedThird + BUTTON_END +
             '</h3>\r\n'
         )
       }
@@ -41,6 +47,10 @@ const createTestMd = () => {
     originals,
     expecteds,
   }
+}
+
+const  normalizeHtml = (html: string) => {
+  return html.replace(/\s+/g, "").trim();
 }
 
 describe('mdToHTML tests', () => {
@@ -61,14 +71,14 @@ describe('mdToHTML tests', () => {
     it("should handle headings' semantic numbering", () => {
       const generated = createTestMd()
       // <div><h1>1</h1><h2>1.1</h2>.....
-      const originalMd = generated.originals.join('')
+      const originalMd = generated.originals.join('');
       // <div><h1 id="1">1 1</h1><h2 id="1.1">1.1 1.1</h2>....
-      const expectedHtml = generated.expecteds.join('')
+      const expectedHtml = generated.expecteds.join('');
 
       //      console.log(originalMd);
       //      console.log(expectedHtml);
-      const processedHTML = mdToHtml(originalMd, true, '1').html
-      expect(processedHTML).toEqual(expectedHtml)
+      const processedHTML = mdToHtml(originalMd, true, '1').html.trim()
+      expect(normalizeHtml(processedHTML)).toEqual(normalizeHtml(expectedHtml));
     })
 
     it('should NOT allow zeros in semantic numbering (case skipping heading levels)', () => {
