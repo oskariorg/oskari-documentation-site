@@ -45,7 +45,7 @@ const createRenderer = (useSectionNumbering: boolean, startingSectionNumber: str
         previousLevel = intLevel;
 
         const tags = content.match(tagRegex);
-        let titleText = content.replace(tagRegex, '').trim();
+        const titleText = content.replace(tagRegex, '').trim();
 
         const slug = slugify(titleText)
         const sectionNumber = sectionCounter.slice(0, level).map(sectionNumber => sectionNumber || 1).join('.');
