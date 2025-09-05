@@ -2,24 +2,6 @@ import { MarkdownFileMetadata } from '@/types/types';
 import slugify from 'slugify';
 import 'highlight.js/scss/a11y-dark.scss';
 
-export const updateMarkdownImagePaths = (markdownString: string, imagesRuntimePath: string = ''): string => {
-  const regex = /!\[(.*?)\]\((.*?)\)/g;
-
-  function replaceFunc(match: string, altText: string, imagePath: string) {
-
-    if (match.indexOf('resources') > -1) {
-      const pathStartRegex = /^.*?\/resources\//;
-      const replacedImagePath = imagePath.replace(pathStartRegex, imagesRuntimePath);
-      return `![${altText}](${replacedImagePath})`;
-    }
-
-    return (`![${altText}](${imagesRuntimePath + '/' + imagePath})`);
-  }
-
-  const result = markdownString.replace(regex, replaceFunc);
-  return result;
-}
-
 export const updateMarkdownHtmlStyleTags = (markdownString: string): string => {
   const regex = /"([^"]*)"/g;
 
