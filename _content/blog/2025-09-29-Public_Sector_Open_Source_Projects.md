@@ -1,3 +1,4 @@
+---
 layout: post
 title:  "Public Sector Open Source Projects – How is development organized?"
 excerpt: "An guest blog on the development and use of Open Source Software."
