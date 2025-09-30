@@ -13,7 +13,7 @@ Johan Linåker is a Swedish Senior Researcher at [RISE Research Institutes of Sw
 
 This guest blog summarizes his main findings. [Read the full research here](https://ri.diva-portal.org/smash/get/diva2:1999251/FULLTEXT01.pdf). Johan Linåker's other OSS-related publications can be found [on the website of RISE Researche Institutes of Sweden](https://www.ri.se/en/person/johan-linaker).
 
-![A photograph of Johan Linåker.](/resources/2025/johan_linaker.png)
+![A photograph of Johan Linåker.](/resources/2025/johan_linaker.jpg)
 
 # Public Sector Open Source Projects – How is development organized?
 
