@@ -26,3 +26,5 @@ Upgrading from 3.0.x should be straight-forward by just bumping up the version n
 ## Release notes
 
 You can see the compiled list of Release notes, Migration Guide and API changelog available on Oskari.org: https://oskari.org/documentation/docs/3.1.0/12-Changelog
+
+![A decorative picture that announces a new Oskari release.](/resources/2025/oskari_release.png)
