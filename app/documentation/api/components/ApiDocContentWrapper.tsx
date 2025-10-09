@@ -1,5 +1,6 @@
 'use client';
 import '@/styles/apidoc.scss'
+import '@/styles/mermaid.scss'
 import '@fortawesome/fontawesome-free/js/fontawesome.min.js';
 import '@fortawesome/fontawesome-free/css/fontawesome.min.css';
 import '@fortawesome/fontawesome-free/css/solid.min.css';
@@ -17,6 +18,7 @@ export default function ApiDocContentWrapper({html}: {html: string}) {
       htmlLabels:true,
       theme: 'base',
       themeVariables: {
+        actorBkg:'#ffd400',
         primaryColor: '#ffd400',
         primaryTextColor: '#222222',
         primaryBorderColor: '#222222',

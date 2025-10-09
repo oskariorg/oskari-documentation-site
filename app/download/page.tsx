@@ -43,7 +43,7 @@ export default async function DownloadPage() {
         <IconCard
           className='!bg-[var(--color-accent)]'
           title='Latest version'
-          subtitle='A Jetty 9 package of Oskari. Recommended for preview use.'
+          subtitle='A Tomcat 10.1 package of Oskari. Recommended for preview use.'
           content={
             <>
               <div className='flex justify-center'>

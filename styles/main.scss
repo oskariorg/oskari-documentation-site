@@ -1,13 +1,14 @@
+@use "sass:meta";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import 'reset';
-@import 'variables';
-@import 'buttons';
-@import 'layout';
-@import 'navigation';
-@import 'md-styles';
+@include meta.load-css('reset');
+@include meta.load-css('variables');
+@include meta.load-css('buttons');
+@include meta.load-css('layout');
+@include meta.load-css('navigation');
+@include meta.load-css('md-styles');
 
 /* @media (prefers-color-scheme: dark) {
   :root {

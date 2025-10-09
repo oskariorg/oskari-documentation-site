@@ -3,27 +3,19 @@ import path from 'path'
 import matter from 'gray-matter'
 import { mdToHtml } from './customMarked'
 import {
-  insertIdsToHeaders,
   processAllLinks,
-  processHeaders,
   processInternalMDLinks,
   processMigrationGuideLinks,
-  updateMarkdownHtmlStyleTags,
-  updateMarkdownImagePaths
+  updateMarkdownHtmlStyleTags
 } from './markdownToHtml'
 import { MarkdownFileMetadata, VersionDocType } from '@/types/types'
 
-function compileMarkdownToHTML(markdown: string, startingSectionNumber: string): {
+function compileMarkdownToHTML(markdown: string, startingSectionNumber: string, imagesPath: string): {
   html: string
   anchorLinks: VersionDocType['anchorLinks']
 } {
   const { content } = matter(markdown)
-  const markedHtml = mdToHtml(content)
-  const { html, anchorLinks } = insertIdsToHeaders(markedHtml, startingSectionNumber)
-  return {
-    html,
-    anchorLinks,
-  }
+  return mdToHtml(content, true, startingSectionNumber, imagesPath);
 }
 export async function getVersionIndex(version: string, fetchHtmlContent: boolean = false) {
   const rootFolder = `_content/docs/${version}`;
@@ -72,7 +64,7 @@ export const readAndConcatMarkdownFiles = async function(parentItem: MarkdownFil
 
   markdownAll = processMarkdown(markdownAll, imagesPath, indexJSON, activeSectionSlug);
 
-  const compiled = compileMarkdownToHTML(markdownAll, parentItem.ordinal || '1');
+  const compiled = compileMarkdownToHTML(markdownAll, parentItem.ordinal || '1', imagesPath);
   return compiled;
 };
 
@@ -94,9 +86,8 @@ const replaceLevelOneHeadingsWithLevelTwo = (markdown: string): string => {
 }
 
 const processMarkdown = (markdown: string, imagesPath: string, indexJSON: MarkdownFileMetadata[] = [], activeSectionTitle: string = '') => {
-  markdown = updateMarkdownImagePaths(markdown, imagesPath);
+
   markdown = updateMarkdownHtmlStyleTags(markdown);
-  markdown = processHeaders(markdown);
   // migration guide first, specific treatment for that
   markdown = processMigrationGuideLinks(markdown);
 
@@ -114,5 +105,5 @@ const processMarkdown = (markdown: string, imagesPath: string, indexJSON: Markdo
 export const getMarkdownContentAsHtml = async function(mdFilePath: string, imagesFilePath: string) {
   const markdown = await readMarkdownFile(mdFilePath, imagesFilePath);
   const content = matter(markdown).content;
-  return mdToHtml(content);
+  return mdToHtml(content, false, '1', imagesFilePath).html;
 }

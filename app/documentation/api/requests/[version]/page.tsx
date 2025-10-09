@@ -5,15 +5,16 @@ import EventsAndRequestsSidebarContent from '../../components/EventsAndRequestsS
 export default async function RequestsVersionPage({
   params,
 }: {
-  params: { version: string }
+  params: Promise<{ version: string }>
 }) {
 
-  const requests = (await import('_content/api/versions/'+params.version+'/requests.json')).default;
-  const requestsBaseRef = '/documentation/api/requests/'+params.version+'/';
+  const { version } = await params;
+  const requests = (await import('_content/api/versions/'+version+'/requests.json')).default;
+  const requestsBaseRef = '/documentation/api/requests/'+version+'/';
 
   return <ApiSectionContentPage
-    version={params.version}
+    version={version}
     sideBarContent={<EventsAndRequestsSidebarContent title='Select request' elements={requests} baseHref={requestsBaseRef}/>}
-    mainContent={<ApiDocChangeLog version={params.version}/>}
+    mainContent={<ApiDocChangeLog version={version}/>}
     baseHref='/documentation/api/requests/'/>;
 }

@@ -31,6 +31,16 @@ div.apidocContentWrapper {
   th {
     text-align: left;
   }
+
+  .updateHrefButton {
+    float: right;
+    font-size: 1.2rem;
+
+    &:hover {
+      cursor: pointer
+    }
+  }
+
 }
 
 .apidocSidebarLink {
@@ -55,52 +65,52 @@ div.apidocContentWrapper {
 }
 
 
-  /*badges*/
-  span.label.label-primary {
-    margin-left: 4px;
-    margin-right: 4px;
+/*badges*/
+span.label.label-primary {
+  margin-left: 4px;
+  margin-right: 4px;
 
-    &.add {
-      background-color : green;
-    }
-
-    &.mod {
-      background-color : orange;
-    }
-
-    &.rem {
-      background-color : red;
-    }
-
-    &.breaking {
-      background-color : red;
-    }
-
+  &.add {
+    background-color : green;
   }
 
-  .label-primary {
-    background-color: #428bca;
+  &.mod {
+    background-color : orange;
   }
 
-  .label {
-    display: inline;
-    padding: .4em .6em .2em .6em;
-    font-size: 75%;
-    font-weight: 700;
-    line-height: 1;
-    color: #fff;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: baseline;
-    border-radius: .25em;
+  &.rem {
+    background-color : red;
   }
 
-  code:not(.hljs) {
-    padding: 2px 4px;
-    font-size: 90%;
-    color: #c7254e;
-    background-color: #f9f2f4;
-    border-radius: 4px;
-    overflow: hidden;
-    word-wrap: break-word;
+  &.breaking {
+    background-color : red;
   }
+
+}
+
+.label-primary {
+  background-color: #428bca;
+}
+
+.label {
+  display: inline;
+  padding: .4em .6em .2em .6em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
+}
+
+code:not(.hljs) {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+  overflow: hidden;
+  word-wrap: break-word;
+}

@@ -3,8 +3,11 @@
   @media screen and (max-width: 992px) {
     --otter-height: 48px;
   }
-  --otter-top-position: calc(var(--otter-height) / 2 * -1 + 10px); // -36px
-  background-color: var(--color-beige);
+
+  & {
+    --otter-top-position: calc(var(--otter-height) / 2 * -1 + 10px); // -36px
+    background-color: var(--color-beige);
+  }
 
   &__content {
     position: relative;

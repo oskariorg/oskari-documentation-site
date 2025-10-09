@@ -2,7 +2,7 @@
 layout: post
 title: "Greetings from Developers' Day 2025!"
 excerpt: "Oskari developers got together in April to share information and experiences about working with Oskari."
-date: 2025-03-07 11:30:00 +0200
+date: 2025-04-04 12:00:00 +0200
 categories: [developing, event]
 tags:
   - blog
@@ -37,7 +37,7 @@ In Oskari, users have been given roles and different user groups have been creat
 
 Tampere is also updating their instances to 3.0, and are planning to make the add-on to be generally available in Oskari core. [The source code for the add-on can be found on GitHub](https://github.com/Tampere/tampere-oskari-server-extension)
 
-![A photograph where participants of the event listen to a presentation.](/resources/2025/DevDay_1.jpeg)
+![A photograph where participants of the event listen to a presentation.](/resources/2025/DevDay_1.jpg)
 
 ## Extending the RPC functionality
 
@@ -65,7 +65,7 @@ Discussions about the joint project between the parties began in the fall of 202
 
 The update was carried out as a project, in which an attempt was made to tie the teams as closely as possible to the updating. Arttu Pietarinen, who presented the joint project, was particularly happy about the project-based working method which made the entire process easier: The National Land Survey of Finland and Sitowise had their own teams and a common goal. The intensive working method, in which employees were tied to the project, also lowered the threshold for asking for help from each other. Challenges encountered in the updates and their solutions were also easily found, as Sitowise's developers imported the changes directly into the Väylä Map service.
 
-![A photograph where participants of the event listen to a presentation about updating Oskari.](/resources/2025/DevDay_2.jpeg)
+![A photograph where participants of the event listen to a presentation about updating Oskari.](/resources/2025/DevDay_2.jpg)
 
 ## The Oskari geoportal and RPC implementation workshops
 

@@ -5,15 +5,16 @@ import BundlesSidebarContent from '../../components/BundlesSidebarContent';
 export default async function BundlesVersionPage({
   params
 }: {
-  params: { version: string }
+  params: Promise<{ version: string }>
 }) {
 
-  const bundles = (await import('_content/api/versions/'+params.version+'/bundles.json')).default;
-  const bundleBaseRef = '/documentation/api/bundles/'+params.version+'/';
+  const { version } = await params;
+  const bundles = (await import('_content/api/versions/'+version+'/bundles.json')).default;
+  const bundleBaseRef = '/documentation/api/bundles/'+version+'/';
 
   return <ApiSectionContentPage
-    version={params.version}
+    version={version}
     sideBarContent={<BundlesSidebarContent elements={bundles} baseHref={bundleBaseRef}/>}
-    mainContent={<ApiDocChangeLog version={params.version}/>}
+    mainContent={<ApiDocChangeLog version={version}/>}
     baseHref='/documentation/api/bundles/'/>;
 }
