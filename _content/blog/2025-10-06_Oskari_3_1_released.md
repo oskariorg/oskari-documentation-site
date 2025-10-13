@@ -19,7 +19,7 @@ The release doesn’t have many visible changes for end-users, but has:
 -	plenty of library updates
 -	some tuning for mobile/touch-based devices
 -	bunch of refactoring for the publisher functionality that just missed the last release (like a hook for other bundles to add panels to publisher UI)
--	couple of new things for RPC-based apps
+-	a couple of new things for RPC-based apps
 -	other smaller fixes and tunings
 
 Upgrading from 3.0.x should be straight-forward by just bumping up the version number for your Oskari-based application. No extra manual migration steps required.
