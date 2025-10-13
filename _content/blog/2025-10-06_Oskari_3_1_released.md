@@ -15,6 +15,7 @@ The new version was released 29th of September and it is available on [GitHub](h
 ## Many library updates
 
 The release doesn’t have many visible changes for end-users, but has:
+
 -	plenty of library updates
 -	some tuning for mobile/touch-based devices
 -	bunch of refactoring for the publisher functionality that just missed the last release (like a hook for other bundles to add panels to publisher UI)
