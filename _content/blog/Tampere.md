@@ -18,7 +18,7 @@ The user IDs of city officials have been integrated into the Oskari installation
 
 Tampere provides and maintains a wide range of substantive data in a geospatial format. Through role-based management, this information can also be viewed by their various stakeholders through the map service. More than 1000 different map layers are available for internal use, with about 500 being publicly available.
 
-The City of Tampere was one of the organisations that developed the hierarchical layer list function in Oskari. The hierarchical layer is now part of Oskari's community packages.
+The City of Tampere was one of the organisations that developed support for hierarchical structures for layer listing functionality in Oskari. The hierarchical structure of layers have been available for all Oskari users since and has been included in the more recent implementation of the layer listing user interface as well.
 
 The Oskari RPC has been used to implement a file download service with a link to the download service. The service provides downloads of aerial photographs and other planning source material.
 
