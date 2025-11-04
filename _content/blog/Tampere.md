@@ -29,4 +29,4 @@ The main use is for residents, City of Tampere staff and the city stakeholders.
 ## Find out more!
 
 [https://kartat.tampere.fi/oskari](https://kartat.tampere.fi/oskari)
-[The File download service](https://kartat.tampere.fi/oskari/?lang=fi&uuid=cf237bc6-7977-4812-81da-14a95a4d94cc)
+[The File download service](https://kartat.tampere.fi/oskari/lataus)
