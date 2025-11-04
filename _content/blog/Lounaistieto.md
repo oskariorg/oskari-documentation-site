@@ -10,7 +10,7 @@ tags:
 
 # The Southwest Finland Map Service
 
-The Southwest Finland Map Service (or Lounaistieto map service) is run by several organisations in the region, including the city of Turku and the Regional council of Southwest Finland.
+Lounaistieto is a regional information service in Southwest Finland. The service is run by several organisations in the region, including the city of Turku and the Regional council of Southwest Finland. The coordinating and administering of the service is done by Lounaistieto.
 
 ## How is Oskari used?
 
