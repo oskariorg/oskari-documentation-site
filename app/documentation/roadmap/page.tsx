@@ -18,27 +18,59 @@ export default function OskariRoadmapPage() {
           Oskari roadmap for 2026 is a compiled by the many organisations that use Oskari and are members of the Oskari Joint Development Forum (JDF).
         </div>
         <div>
-          In 2026, Oskari development consists of both the development of the Oskari core and re-organizing and enhancing the work of the JDF.
+          Oskari's coordinators and the Oskari JDF will continue to work on keeping Oskari as a product that is up-to-date and easy to use. 
+          In order to do so, one of the aims for 2026 is to apply for a project funding to do joint developing of Oskari between organisations.
+        </div>
+        <div>
+          In 2026, Oskari development focuses on both the development of the Oskari core and re-organizing and enhancing the work of the JDF.
         </div>
         <div>
           Oskari core development in 2026 consists of the following:
-        <list>
-            <b>Library updates</b> (Q1-Q4)
-            Update the existing libraries to keep Oskari up-to-date and to take care of security considerations.
-            
-            <b>Migrating the old jQuery components to React (Q1-Q4)</b>
-            The React migration has been going on for some time now and in Oskari 3.0. major release a big effort
-
-            Combining My Data and My Places (the spatial datasets the user uploads and the features user can draw on map)
-            Improvements on documentation
-        </list>
         </div>
         <div>
-          The Oskari JDF will continue to work on keeping Oskari as a product that is up-to-date and easy to use. 
-          In order to do so, one of the aims for 2026 is to apply for a project funding to do joint developing of Oskari between organisations.
+            <b>Library updates (Q1-Q4)</b>
+        </div>
+        <div>      
+            Updating the existing libraries makes sure that Oskari is up-to-date, safe to use and operates smoothly.
+        </div>
+        <div>           
+            <b>Migrating the old jQuery components to React (Q1-Q4)</b>
+        <div>
+            Migrating to React will make Oskari easier to use for developers and simplifies maintaining the Oskari codebase.
+            A big leap forward in React migration was made in the Oskari 3.0 update yet some components are still based on jQuery.
+        </div>
+        <div>
+            <b>Combining My Data (userlayer) and My Places (myplaces) to a new bundle: myfeatures (Q1-Q2)</b>
+        </div>
+        <div>    
+            This is a functionality that will replace My Places (features that user draws on map) and My Data (spatial datasets that user uploads to an Oskari instance). 
+            The functionality from user perspective is the same as userlayer today but the internal code will be rewritten on both frontend and server.
+            Preview of the functionality was published in 3.2.0 update in November 2025 and developing will continue in 2026.
+        </div>
+        <div>
+            <b>Improvements on the documentation (Q1-Q4)</b>
+        </div>
+        <div>
+            To make sure that Oskari is easy to implement and develop, the documentation has to be comprehensive and up-to-date.
+            In 2026 the work on improving the documentation will begin with revising the RPC section and going through the issues listed <a href='https://github.com/oskariorg/oskari-documentation/issues'>in the GitHub repo of documentation</a>.
+        </div>
         </div>
         </Text>
       </div>
+
+      <div>
+        <h2 id="process">The Oskari Roadmap process</h2>
+        <Text>
+        <div>
+        Oskari software is developed different parties: the National Land Survey of Finland, which is coordinating the Oskari project, organizations that use and develop Oskari and individual Oskari community members. 
+        The development is based on jointly created vision described in the Roadmap and the individual needs of Oskari developing organizations.
+        The source code provided by the community members or other developers will be integrated into the core Oskari software if deemed suitable. 
+        The development projects should document the created source code with good codes of conduct, so that the reuse of the code is fluent.    
+        The technical team of NLS FI checks the documentation before a commit can take place.
+        </div>
+        </Text>
+      </div>
+
       <div>
       <h2 id="release_schedule">Release schedule</h2>
         <Text>
