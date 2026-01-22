@@ -3,13 +3,12 @@ import Text from '@/components/Text'
 import { Metadata } from 'next'
 import HighlightBox from '@/components/HighlightBox'
 import Button from '@/components/Button'
-import Link from 'next/link'
 export const metadata: Metadata = {
-  title: 'Getting Started',
+  title: 'Oskari Roadmap',
 }
 
 
-export default function GettingStartedPage() {
+export default function OskariRoadmapPage() {
   return (
     <Layout heroSmall heroTitle='Oskari Roadmap' decorateLinks={true}>
       <div>
