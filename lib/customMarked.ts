@@ -60,6 +60,7 @@ const createRenderer = (
         let badges: (string | null)[] = [];
         if (tags && tags.length > 0) {
           badges = tags.map((tag: string) => {
+            // eslint-disable-next-line no-extra-boolean-cast
             if (!!BADGE_TEMPLATES[tag.toLowerCase()]) {
               return BADGE_TEMPLATES[tag.toLowerCase()];
             }

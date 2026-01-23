@@ -16,6 +16,7 @@ export const updateMarkdownHtmlStyleTags = (markdownString: string): string => {
 }
 
 export const processAllLinks = (markdownContent: string): string => {
+  // eslint-disable-next-line no-useless-escape
   const linkRegex = /(?<!\!)\[([^\]]+)\]\(([^)]+)\)/g;
   const result = markdownContent.replaceAll(linkRegex, (match, linkText, linkUrl) => {
     // marked is constantly failing to recognize relative md-style links as links so we're using html here.
