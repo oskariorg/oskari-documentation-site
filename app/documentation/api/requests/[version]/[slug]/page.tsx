@@ -1,3 +1,4 @@
+import { promises as fs } from 'fs';
 
 import slugify from 'slugify';
 import ApiSectionContentPage from '../../../components/ApiSectionContentPage';
@@ -14,7 +15,9 @@ export default async function RequestsContentPage({
 
   const { version, slug } = await params;
   const basePath = '_content/api/versions/' + version + '/';
-  const requests = (await import('_content/api/versions/' + version + '/requests.json')).default;
+  const fileContents = await fs.readFile(basePath+'requests.json', 'utf-8');
+  const requests = JSON.parse(fileContents);
+  // const requests = (await import('_content/api/versions/' + version + '/requests.json')).default;
   const requestsBaseRef = '/documentation/api/requests/' + version + '/';
 
   const foundItem = requests.find((element: OskariEventOrRequest) => slugify(element.name) === slug);
