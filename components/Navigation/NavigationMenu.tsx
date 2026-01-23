@@ -15,10 +15,6 @@ export default function NavigationMenu() {
   const { width, height } = useWindowDimensions()
   const pathname = usePathname()
 
-  useEffect(() => {
-    closeMenu()
-  }, [width, height])
-
   const toggleMenu = () => {
     const bodyEl = document.getElementsByTagName('body')[0]
     setIsOpen((prev) => !prev)
@@ -37,6 +33,11 @@ export default function NavigationMenu() {
       setMenuitemOpen('');
     }
   }
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    closeMenu()
+  }, [width, height])
+
   const toggleSubmenuCallback = (menuitem: string, itemIsOpen: boolean) => {
     setMenuitemOpen(itemIsOpen ? menuitem : '');
   };

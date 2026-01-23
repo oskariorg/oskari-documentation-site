@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint .",
     "docs": "node scripts/runAll.js",
     "dummy_docs": "node scripts/generateDummyVersions.js",
     "metadata": "node scripts/generateContentMetadata.js",

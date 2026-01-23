@@ -53,6 +53,7 @@ export default function Accordion({
     const hasAccordionGroupParent =
       accordionRef.current?.parentElement?.className.includes('accordionGroup')
     if (hasAccordionGroupParent) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setIsAccordionGroup(true)
     }
   }, []);
