@@ -18,7 +18,7 @@ export default function OskariRoadmapPage() {
           Oskari roadmap for 2026 is a compiled by the many organisations that use Oskari and are members of the Oskari Joint Development Forum (JDF).
         </div>
         <div>
-          Oskari's coordinators and the Oskari JDF will continue to work on keeping Oskari as a product that is up-to-date and easy to use. 
+          Oskari&apos;s coordinators and the Oskari JDF will continue to work on keeping Oskari as a product that is up-to-date and easy to use. 
           In order to do so, one of the aims for 2026 is to apply for a project funding to do joint developing of Oskari between organisations.
         </div>
         <div>
