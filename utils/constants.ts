@@ -32,12 +32,16 @@ export const NAVIGATION_ITEMS: Array<NavigationItemType> = [
     path: '/documentation/docs/latest/',
     children: [
       {
-        name: 'FAQ',
-        path: '/documentation/faq',
+        name: 'Roadmap',
+        path: '/documentation/roadmap'
       },
       {
         name: 'API',
         path: '/documentation/api',
+      },
+      {
+        name: 'FAQ',
+        path: '/documentation/faq',
       },
       {
         name: 'RPC Example',
