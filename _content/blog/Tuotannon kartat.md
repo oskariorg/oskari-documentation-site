@@ -10,7 +10,7 @@ tags:
 
 # The production status map
 
-The production status map provides municipal and organisational customers in particular with up-to-date information on the progress of aerial photography, laser scanning and the updating of terrain data, for example.
+The production status map provides municipal and organisational customers in particular with up-to-date information on the National Land Survey of Finland's progress of aerial photography, laser scanning and the updating of terrain data.
 
 # How is Oskari used?
 
@@ -18,7 +18,7 @@ The service provides a visual view of the production situation of interest to st
 
 ## Who is the map service for?
 
-Designed for municipal and organisational customers.
+The service is designed for municipal and organisational customers.
 
 ## Find out more!
 

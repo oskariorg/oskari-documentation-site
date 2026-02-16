@@ -1,4 +1,5 @@
 
+import { promises as fs } from 'fs';
 import slugify from 'slugify';
 import ApiSectionContentPage from '../../../components/ApiSectionContentPage';
 import BundlesSidebarContent from '../../../components/BundlesSidebarContent';
@@ -14,7 +15,11 @@ export default async function BundlesContentPage({
 
   const { version, slug } = await params;
   const bundlesBasePath = '_content/api/versions/' + version + '/';
-  const bundles = (await import('_content/api/versions/' + version + '/bundles.json')).default;
+  
+  const fileContents = await fs.readFile(bundlesBasePath + 'bundles.json', 'utf-8');
+  const bundles = JSON.parse(fileContents);
+
+  // const bundles = (await import('_content/api/versions/' + version + '/bundles.json')).default;
   const bundleBaseRef = '/documentation/api/bundles/' + version + '/';
 
   let allBundles: Array<{name: string, path: string}> = [];

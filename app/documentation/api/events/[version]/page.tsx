@@ -1,3 +1,4 @@
+import { promises as fs } from 'fs';
 import ApiDocChangeLog from '../../components/ApiDocChangeLog';
 import ApiSectionContentPage from '../../components/ApiSectionContentPage';
 import EventsAndRequestsSidebarContent from '../../components/EventsAndRequestsSidebarContent';
@@ -9,7 +10,9 @@ export default async function EventsVersionPage({
 }) {
 
   const { version } = await params;
-  const events = (await import('_content/api/versions/'+version+'/events.json')).default;
+  const fileContents = await fs.readFile('_content/api/versions/'+version+'/events.json', 'utf-8');
+  const events = JSON.parse(fileContents);
+  //const events = (await import('_content/api/versions/'+version+'/events.json')).default;
   const eventsBaseRef = '/documentation/api/events/'+version+'/';
 
   return <ApiSectionContentPage

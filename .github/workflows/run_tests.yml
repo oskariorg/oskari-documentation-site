@@ -32,6 +32,8 @@ jobs:
       - name: Install dependencies
 # With package-lock.json we should use "npm ci"
         run: npm install
+      - name: Test linting
+        run: npm run lint
       - name: Run tests
         run: npm run test
       - name: Generate docs metadata

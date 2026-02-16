@@ -1,7 +1,7 @@
 ---
 layout: ''
 title: HSY Open Map Service
-excerpt: The HSY open map service provides open data for everyone to use.
+excerpt: The HSY open map service provides data about Helsinki metropolitan area.
 date: 2023-12-01 13:00:00 +0200
 image: /resources/HSY_Open_Maps.jpg
 tags:
@@ -10,17 +10,19 @@ tags:
 
 # HSY Open Map Service
 
-The HSY open map service provides open data for everyone to use.
+HSY (Helsinki Region Environmental Services Authority) provides municipal water supply and waste management services as well as information on the area.
+
+HSY map service provides information about Helsinki metropolitan area and the environment.
 
 ## How is Oskari used?
 
-In the map service, you can view geographic information materials interactively and download materials to your own computer. All of this works easily in your browser and requires no registrations or installations.
+The public Oskari map service contains all the openly available datasets HSY provides. The end user can view and also download the data using Oskari's download basket functionality. No registeration or sign-in is required from the user.
 
-Open data map service contains all geographic data that HSY has opened as an open data. You can easily view several datasets simultaneously without owning a special gis software. It is also possible to download data by using download basket.
+HSY uses Oskari to manage and navigate, for example, where the different waste component areas are in landfills. They edit and maintain different map layers based on drone images from the area or editing the features in the field. 
 
 ## Who is the map service for?
 
-Everyone from citizens to GI Specialists.
+Everyone from citizens to GI specialists.
 
 ## Find out more!
 
