@@ -1,29 +1,26 @@
 /* These have very specific selectors so we can modify the generated SVGs per page */
-h2#Application-environment ~ pre.mermaid svg g.mindmap-node.section-root circle.node-bkg {
+h2#Application-environment ~ pre.mermaid svg g.mindmap-node.section-root circle.label-container {
   /* Oskari-based service */
   fill: #ffd400;
 }
-h2#Application-environment ~ h3#Software-overview ~ pre.mermaid svg g.mindmap-node rect.node-bkg.node-no-border,
-h2#Application-environment ~ h3#Software-overview ~ pre.mermaid svg g.mindmap-node path.node-bkg.node-no-border,
-h2#Application-environment ~ h3#Software-overview ~ pre.mermaid svg path.edge.section-edge-0 {
+h2#Application-environment ~ h3#Software-overview ~ pre.mermaid svg g.mindmap-node path.node-bkg {
   /* oskari components */
   fill: #A3C4BC;
 }
 
-h2#Application-environment ~ h3#Software-overview ~ pre.mermaid svg g.mindmap-node rect.node-bkg.node-rounded-rect,
-h2#Application-environment ~ h3#Software-overview ~ pre.mermaid svg g.mindmap-node path.node-bkg.node-rounded-rect {
+h2#Application-environment ~ h3#Software-overview ~ pre.mermaid svg g.mindmap-node g.basic.label-container path {
   /* app components */
   fill: #F4F1DE;
 }
-h2#Application-environment ~ h3#Software-overview ~ pre.mermaid svg path.edge.section-edge-0,
-h2#Application-environment ~ h3#Software-overview ~ pre.mermaid svg path.edge.section-edge-1 {
+h2#Application-environment ~ h3#Software-overview ~ pre.mermaid svg g.edgePaths path {
   /* app components */
   stroke: #F4F1DE;
 }
-h2#Application-environment ~ h3#Software-overview ~ pre.mermaid svg g.mindmap-node.section-root text {
-  fill: black;
+h2#Application-environment ~ h3#Software-overview ~ pre.mermaid svg g.mindmap-node g.label .nodeLabel p {
+  color: black;
+  /*fill: black; */
 }
-h2#Application-environment ~ h3#Data-source-overview ~ pre.mermaid svg g.mindmap-node rect.node-bkg,
+h2#Application-environment ~ h3#Data-source-overview ~ pre.mermaid svg g.mindmap-node rect.basic.label-container,
 h2#Application-environment ~ h3#Data-source-overview ~ pre.mermaid svg g.mindmap-node path.node-bkg {
   /* sdi */
   fill: #d9d9d9;
