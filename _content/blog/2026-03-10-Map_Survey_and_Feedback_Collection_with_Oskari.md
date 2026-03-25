@@ -32,7 +32,7 @@ Over time, the data naturally accumulates as more surveys are created and answer
 
 Like Oskari itself, the feedback tool continues to evolve through ongoing development aimed at improving both user experience and functionality for survey creators and respondents. Key users in the city of Tampere are committed to making the tool increasingly useful and accessible.
 
-Future improvements may include additional features, an enhanced mobile user experience, and improved accessibility. As the broader Oskari community actively contributes to the development of o, tools built on top of it will also continue to benefit from these improvements and remain relevant in the future.
+Future improvements may include additional features, an enhanced mobile user experience, and improved accessibility. As the broader Oskari community actively contributes to the development of Oskari, tools built on top of it will also continue to benefit from these improvements and remain relevant in the future.
 
 ## Conclusion
 
