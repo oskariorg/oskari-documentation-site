@@ -108,7 +108,7 @@ export const mdToHtml = (src: string, useSectionNumbering: boolean = false, star
     // but most of the special handling is in markdownToHtml.ts
     const anchorLinks: Array<DocAnchorLinksType> = [];
     const markedInstance = new Marked({ renderer: createRenderer(useSectionNumbering, startingSectionNumber, anchorLinks, imagesRuntimePath)});
-    const html = markedInstance.parse(src);
+    const html: string = markedInstance.parse(src, { async: false });
     return {
         html,
         anchorLinks
