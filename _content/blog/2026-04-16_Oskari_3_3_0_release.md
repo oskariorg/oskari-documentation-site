@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 'Oskari version 3.2.0 is out!'
-excerpt: 'New Oskari version with library updates and preview of the new myfeatures bundle.'
-date: 2025-11-25 12:00:00 +0200
+title: 'Oskari 3.3.0 is here!'
+excerpt: 'New Oskari version, new features and other changes.'
+date: 2026-04-16 12:00:00 +0200
 categories: [developing]
 tags:
   - blog
