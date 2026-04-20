@@ -10,7 +10,7 @@ import { DISCOVER_FUNCTIONALITIES } from '@/utils/data/whychooseoskari'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Discover',
+  title: 'Functionalities',
 }
 
 export default function DiscoverPage() {

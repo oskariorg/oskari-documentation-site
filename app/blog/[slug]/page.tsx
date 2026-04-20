@@ -8,6 +8,7 @@ import Link from 'next/link'
 import { ArrowLeftIcon } from '@heroicons/react/20/solid'
 import Image from 'next/image'
 import { getMarkdownContentAsHtml } from '@/lib/utils';
+import { Metadata } from 'next';
 
 const getPostBySlug = (slug: string) => {
     const found = allPosts.find((entry) => {
@@ -15,6 +16,39 @@ const getPostBySlug = (slug: string) => {
     });
 
     return found;
+}
+
+export const generateMetadata = async ({
+    params,
+}: {
+    params: Promise<{ slug: string }>
+}): Promise<Metadata> => {
+    const { slug } = await params;
+    const post = getPostBySlug(slug);
+
+    if (!post) {
+        return {
+            title: 'Blog',
+        };
+    }
+
+    const postImage = post.image || (post.imagesFromPost?.[0] ?? undefined);
+
+    return {
+        title: post.title,
+        description: post.excerpt,
+        openGraph: {
+            title: post.title,
+            description: post.excerpt,
+            images: postImage ? [{ url: postImage, alt: post.title }] : undefined,
+            type: 'article',
+        },
+        twitter: {
+            title: post.title,
+            description: post.excerpt,
+            images: postImage ? [postImage] : undefined,
+        },
+    };
 }
 
 export default async function SingleBlogPage({

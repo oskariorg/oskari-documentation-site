@@ -2,6 +2,17 @@ import Button from "@/components/Button";
 import HighlightBox from "@/components/HighlightBox";
 import DefaultLayout from "@/components/Layout";
 import Text from '@/components/Text'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Oskari API',
+  openGraph: {
+    title: 'Oskari API',
+  },
+  twitter: {
+    title: 'Oskari API',
+  },
+}
 
 export default function ApiMainPage() {
   return <DefaultLayout heroSmall heroTitle="Oskari API">

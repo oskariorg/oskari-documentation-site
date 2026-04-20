@@ -5,6 +5,7 @@ import {  getVersionIndex } from '@/lib/utils'
 import availableVersions from '@/_content/docs';
 import Error from '@/components/Error'
 import { MarkdownFileMetadata } from '@/types/types'
+import type { Metadata } from 'next'
 import '@/styles/apidoc.scss'
 import '@fortawesome/fontawesome-free/js/fontawesome.min.js';
 import '@fortawesome/fontawesome-free/css/fontawesome.min.css';
@@ -18,15 +19,26 @@ export const generateMetadata = async ({
   params,
 }: {
   params: Promise<{ version: string, slug: string }>
-}) => {
+}): Promise<Metadata> => {
   const { version, slug } = await params;
   await initIndexJSON(version)
   const section = indexJSON[version]?.find((item: MarkdownFileMetadata) => item.slug === slug);
 
   if (section) {
-    return { title: section.title }
+    return {
+      title: section.title,
+      openGraph: {
+        title: section.title,
+      },
+      twitter: {
+        title: section.title,
+      },
+    }
   }
 
+  return {
+    title: 'Documentation',
+  }
 }
 
 const initIndexJSON = async (version: string) => {
