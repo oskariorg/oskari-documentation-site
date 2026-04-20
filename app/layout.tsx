@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import { leagueSpartan, mavenPro } from '@/utils/fonts'
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://oskari.org'
-const ogImage = '/assets/images/oskari_logo_black_horizontal.png'
+const ogImage = '/assets/images/oskari_logo_rgb_horizontal.png'
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
