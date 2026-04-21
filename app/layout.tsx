@@ -1,9 +1,10 @@
 import '../styles/main.scss'
 import type { Metadata } from 'next'
 import { leagueSpartan, mavenPro } from '@/utils/fonts'
+import { MetadataHelper } from '@/utils/metadataHelper'
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://oskari.org'
-const ogImage = '/assets/images/oskari_logo_black_horizontal.png'
+const ogImage = MetadataHelper.getOskariDefaultImage()
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
