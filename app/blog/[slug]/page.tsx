@@ -9,6 +9,9 @@ import { ArrowLeftIcon } from '@heroicons/react/20/solid'
 import Image from 'next/image'
 import { getMarkdownContentAsHtml } from '@/lib/utils';
 import { Metadata } from 'next';
+import { MetadataHelper } from '@/utils/metadataHelper'
+
+const defaultOgImage = MetadataHelper.getOskariDefaultImage()
 
 const getPostBySlug = (slug: string) => {
     const found = allPosts.find((entry) => {
@@ -32,7 +35,7 @@ export const generateMetadata = async ({
         };
     }
 
-    const postImage = post.image || (post.imagesFromPost?.[0] ?? undefined);
+    const postImage = post.image || (post.imagesFromPost?.[0] ?? defaultOgImage);
 
     return {
         title: post.title,
@@ -40,13 +43,13 @@ export const generateMetadata = async ({
         openGraph: {
             title: post.title,
             description: post.excerpt,
-            images: postImage ? [{ url: postImage, alt: post.title }] : undefined,
+            images: [{ url: postImage, alt: post.title }],
             type: 'article',
         },
         twitter: {
             title: post.title,
             description: post.excerpt,
-            images: postImage ? [postImage] : undefined,
+            images: [postImage],
         },
     };
 }

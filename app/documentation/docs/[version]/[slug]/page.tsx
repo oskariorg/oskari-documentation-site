@@ -6,6 +6,7 @@ import availableVersions from '@/_content/docs';
 import Error from '@/components/Error'
 import { MarkdownFileMetadata } from '@/types/types'
 import type { Metadata } from 'next'
+import { MetadataHelper } from '@/utils/metadataHelper'
 import '@/styles/apidoc.scss'
 import '@fortawesome/fontawesome-free/js/fontawesome.min.js';
 import '@fortawesome/fontawesome-free/css/fontawesome.min.css';
@@ -14,6 +15,7 @@ import ApiDocContentWrapper from '@/app/documentation/api/components/ApiDocConte
 import AccordionListWrapper from '@/app/documentation/docs/[version]/[slug]/AccordionListWrapper'
 
 let indexJSON: { [key: string]: MarkdownFileMetadata[] } = {};
+const defaultOgImage = MetadataHelper.getOskariDefaultImage()
 
 export const generateMetadata = async ({
   params,
@@ -29,15 +31,35 @@ export const generateMetadata = async ({
       title: section.title,
       openGraph: {
         title: section.title,
+        images: [
+          {
+            url: defaultOgImage,
+            alt: 'Oskari Map Application Platform',
+          },
+        ],
       },
       twitter: {
         title: section.title,
+        images: [defaultOgImage],
       },
     }
   }
 
   return {
     title: 'Documentation',
+    openGraph: {
+      title: 'Documentation',
+      images: [
+        {
+          url: defaultOgImage,
+          alt: 'Oskari Map Application Platform',
+        },
+      ],
+    },
+    twitter: {
+      title: 'Documentation',
+      images: [defaultOgImage],
+    },
   }
 }
 
