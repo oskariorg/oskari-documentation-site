@@ -21,9 +21,11 @@ tags:
 📍 Osoite: HSY / Ilmala 2
 Kokoustila Länsisali (L-rappu, 8. kerros)
 
-Oskarin verkostopäivä järjestetään jälleen toukokuussa Helsingissä! Tällä kertaa tapaamme HSY:n tiloissa Ilmala 2:ssa (osoite Ilmalantori 1, kokoustila Länsisali). Lisätietoja saapumisesta löytyy [HSY:n sivuilta](https://www.hsy.fi/hsy/toimipisteet/).
+Oskarin verkostopäivä järjestetään jälleen toukokuussa Helsingissä! Tällä kertaa tapaamme HSY:n tiloissa Ilmala 2:ssa (osoite Ilmalantori 1, kokoustila Länsisali). Lisätietoja saapumisesta löytyy [HSY:n sivuilta](https://www.hsy.fi/hsy/toimipisteet/). **Ei etäosallistumismahdollisuutta.**
 
-Tapahtumaan ovat tervetulleita Oskari-verkoston jäsenet, kaikki Oskaria käyttävät sekä käyttöönottoa pohtivat organisaatiot. 
+Tapahtumaan ovat tervetulleita Oskari-verkoston jäsenet, kaikki Oskaria käyttävät sekä käyttöönottoa pohtivat organisaatiot. Kutsua saa välittää eteenpäin.
+
+Oskari on avoimen lähdekoodin karttasovellus, joka mahdollistaa paikkatietoaineistojen tarkastelun nettiselaimella. Jos organisaatiossa tuotetaan, ylläpidetään ja jaellaan paikkatietoa, Oskari on mm. käyttäjähallintansa, karttaupotusmahdollisuuksiensa ja laajan muokattavuutensa ansiosta hyvä vaihtoehto karttapalvelun taustateknologiaksi.
 
 Ohjelma:
 - Mikä Oskari? Ohjelmiston esittely (Juho Rekilä, Oskarin viestintäkoordinaattori)
@@ -47,9 +49,11 @@ Ohjelma:
 📍 Address: HSY / Ilmala 2
 Meeting room Länsisali (Block L, 8th floor)
 
-Oskari Community Day will be held again in May in Helsinki! This time we'll meet up in HSY's Ilmala 2 building (address Ilmalantori 1, meeting room Länsisali). 
+Oskari Community Day will be held again in May in Helsinki! This time we'll meet up in HSY's Ilmala 2 building (address Ilmalantori 1, meeting room Länsisali). **This is a live meeting, no chance for remote participation.**
 
 We welcome all members of the Oskari Joint development forum,  organisations that use Oskari and the organisations that are interested in the possibilities of Oskari.
+
+Oskari is an open-source web map application that allows end users to view spatial data in their web browser. If your organization produces, maintains, or shares spatial data, Oskari is a strong option for a web mapping application thanks to its user management features, map embedding capabilities, and high level of customization.
 
 The program: 
 - Oskari what? A quick preview of the software (Juho Rekilä, communications coordinator)
