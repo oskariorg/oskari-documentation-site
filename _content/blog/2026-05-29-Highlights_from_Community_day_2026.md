@@ -18,7 +18,7 @@ Like before, Oskari Community Day brought together about 20 participants from mu
 
 Oskari’s technical coordinator Sami Mäkinen gave an overview of the latest Oskari releases and their main changes. At the 2025 Community Day the current major release was Oskari 3.0; since then four minor releases have followed. These include many library updates, improvements that simplify developing and configuring Oskari, and enhancements to admin functionalities.
 
-To make updating and maintenance easier, several changes are underway. First, legacy jQuery-based components are being migrated to React. Second, My Data (userlayer) and My Places (myplaces) functionalities will be replaced by a new myplaces bundle. Community Day participants got to try out the new tool during the event and provided feedback to the Oskari core developers at NLS FI. Third, the analysis functionality was removed from the Oskari core because it saw little use and was burdensome to maintain.
+To make updating and maintenance easier, several changes are underway. First, legacy jQuery-based components are being migrated to React. Second, My Datasets (userlayer) and My Places (myplaces) functionalities will be replaced by a new myfeatures bundle (user-friendly name of the functionality still TBD). Community Day participants got to try out the new tool during the event and provided feedback to the Oskari core developers at NLS FI. Third, the analysis functionality was removed from the Oskari core because it saw little use and was burdensome to maintain.
 
 ![Oskari's technical coordinator, Sami Mäkinen, presenting](resources\2026\communityday2026_workshop.jpg)
 
