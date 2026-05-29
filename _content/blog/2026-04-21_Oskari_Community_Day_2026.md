@@ -28,10 +28,11 @@ Tapahtumaan ovat tervetulleita Oskari-verkoston jäsenet, kaikki Oskaria käytt�
 Oskari on avoimen lähdekoodin karttasovellus, joka mahdollistaa paikkatietoaineistojen tarkastelun nettiselaimella. Jos organisaatiossa tuotetaan, ylläpidetään ja jaellaan paikkatietoa, Oskari on mm. käyttäjähallintansa, karttaupotusmahdollisuuksiensa ja laajan muokattavuutensa ansiosta hyvä vaihtoehto karttapalvelun taustateknologiaksi.
 
 Ohjelma:
-- Mikä Oskari? Ohjelmiston esittely (Juho Rekilä, Oskarin viestintäkoordinaattori)
 - Mitä uutta Oskarissa? (Sami Mäkinen, Maanmittauslaitos)
 - Omien paikkojen ja aineistojen yhdistäminen - kokeilusessio
-- Oskari-infrastruktuurin automaatio (Ubigu Oy)
+- Kokemuksia Oskarista paikka- ja ympäristöjärjestelmän taustateknologiana (Timo Aarnio, Gispo Suomi Oy)
+- Oskarin tasonhallintatyökalun esittely (Mikko Kolehmainen, Sitowise Oy)
+- Oskari-infrastruktuurin automaatio (Ilpo Tammi, Ubigu Oy)
 - Oskari-verkoston kuulumiset 2025-2026
 - Verkostotoiminnan kehittäminen (työpaja)
 - Oskari-verkoston yhteisöjäsenen/-jäsenten valinta & palaute & tilaisuuden päätös
@@ -56,11 +57,12 @@ We welcome all members of the Oskari Joint development forum,  organisations tha
 Oskari is an open-source web map application that allows end users to view spatial data in their web browser. If your organization produces, maintains, or shares spatial data, Oskari is a strong option for a web mapping application thanks to its user management features, map embedding capabilities, and high level of customization.
 
 The program: 
-- Oskari what? A quick preview of the software (Juho Rekilä, communications coordinator)
 - What's new in Oskari? (Sami Mäkinen, National Land Survey of Finland)
 - Combining my features and my places - a demo session
-- Automating the Oskari infrastructure (Ubigu Oy)
-- What's been happening in Oskari Joint development forum 2025-2026
+- Experiences with Oskari as the backend technology for location and environmental systems (Timo Aarnio, Gispo Finland Ltd.)
+- A new tool for layer management (Mikko Kolehmainen, Sitowise Ltd.)
+- Automating the Oskari infrastructure (Ilpo Tammi, Ubigu Ltd.)
+- Joint Development Forum 2025–2026: recap of 2025 and what’s next
 - Developing the Oskari community (työpaja)
 - Choosing the Community member(s) to Oskari JDF
 
