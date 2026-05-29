@@ -2,7 +2,7 @@
 title: Highlights from Community Day 2026
 excerpt: "The Oskari community gathered in Helsinki to reflect on 2025 and plan for the future."
 date: 2026-05-29 15:00:00 +0200
-image: resources\2026\communityday2026_workshop.jpg
+image: /resources/2026/communityday2026_workshop.jpg
 tags:
   - event, news
 ---
@@ -20,9 +20,9 @@ Oskari’s technical coordinator Sami Mäkinen gave an overview of the latest Os
 
 To make updating and maintenance easier, several changes are underway. First, legacy jQuery-based components are being migrated to React. Second, My Datasets (userlayer) and My Places (myplaces) functionalities will be replaced by a new myfeatures bundle (user-friendly name of the functionality still TBD). Community Day participants got to try out the new tool during the event and provided feedback to the Oskari core developers at NLS FI. Third, the analysis functionality was removed from the Oskari core because it saw little use and was burdensome to maintain.
 
-![Oskari's technical coordinator, Sami Mäkinen, presenting](resources\2026\communityday2026_workshop.jpg)
+![Oskari's technical coordinator, Sami Mäkinen, presenting](/resources/2026/communityday2026_sami.jpg)
 
-These are only some of the changes from the past year. For the full list of changes, bug fixes, new features, and improvements, see the Changelog. One more note for Oskari map-service admins: the documentation now includes a new chapter, [Usage instructions, which contains, for example, instructions for admins to add map layers]( https://oskari.org/documentation/docs/unreleased/9-Usage-instructions).
+These are only some of the changes from the past year. For the full list of changes, bug fixes, new features, and improvements, see the Changelog. One more note for Oskari map-service admins: the documentation now includes a new chapter, [Usage instructions, which contains, for example, instructions for admins to add map layers](https://oskari.org/documentation/docs/unreleased/9-Usage-instructions).
 
 ## Developing Oskari — three perspectives
 
@@ -30,7 +30,7 @@ Three companies presented on developing Oskari. Ilpo Tammi (Ubigu Ltd.) spoke ab
 
 Ubigu maintains the Oskari instances for the city of Tampere. They created a Docker image of the Oskari instance and automated infrastructure builds. The base repository and usage instructions are available [in the city of Tampere’s GitHub repository.](https://github.com/Tampere/tampere-oskari-server-extension/tree/master/backend)
 
-![Ilpo Tammi, the CEO of Ubigu Ltd., presenting](oskaricommunityday2026_ilpo.jpg)
+![Ilpo Tammi, the CEO of Ubigu Ltd., presenting](/resources/2026/oskaricommunityday2026_ilpo.jpg)
 
 Gispo’s team has been developing an Oskari project that makes heavy use of RPC functionality. Their map service is a highly customized Oskari implementation tailored to varied end-user needs. During development, three new features were contributed to the Oskari core, and there are also discussions about contributing a new feature for styling vector layers.
 
