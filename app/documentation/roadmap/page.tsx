@@ -12,7 +12,7 @@ export default function OskariRoadmapPage() {
   return (
     <Layout heroSmall heroTitle='Oskari Roadmap' decorateLinks={true}>
       <div>
-        <h2 id="roadmap">Oskari Roadmap 2026</h2>
+        <h2 id="roadmap">Oskari Roadmap 2026+</h2>
         <Text>
           Oskari roadmap for 2026 is a compiled by the many organisations that use Oskari and are members of the Oskari Joint Development Forum (JDF).
         </Text>
@@ -40,13 +40,30 @@ export default function OskariRoadmapPage() {
             A big leap forward in React migration was made in the Oskari 3.0 update yet some components are still based on jQuery.
         </Text>
         <Text>
-            <b>Combining My Data (userlayer) and My Places (myplaces) to a new bundle: myfeatures (Q1-Q2)</b>
+            <b>Combining My Data (userlayer) and My Places (myplaces) to a new bundle: myfeatures (Q1-Q3)</b>
         </Text>
         <Text>
             This is a functionality that will replace My Places (features that user draws on map) and My Data (spatial datasets that user uploads to an Oskari instance). 
             The functionality from user perspective is the same as userlayer today but the internal code will be rewritten on both frontend and server.
-            Preview of the functionality was published in 3.2.0 update in November 2025 and developing will continue in 2026.
+            Preview of the functionality was published in 3.2.0 update in November 2025 and developing will continue in 2026. The functionality is functionalli ready at Q2 2026, is currently being tested and the stable version is included Q3 2026 as part of Oskari 3.4.
         </Text>
+        <Text>
+            <b>Metadata search and display improvements (Starting Q3 2026)</b>
+        </Text>
+        <Text>
+            The functionality for searching and displaying metadata records (fetched from a CSW) will be under review and refactoring starting from Q3 2026.
+        </Text>
+        <Text>
+            <b>Oskari 4.0 (Starting Q4 2026)</b>
+        </Text>
+        <Text>
+            After the 3.4 release we will start working on Oskari 4.0. Initial goals are updating server side libraries like Spring Framework version 6 to 7, Jackson 2 to 3, Tomcat 10.1 to 11 and related changes. For frontend functionality, as we are already bumping the major version, we would love to include a React-based implementation of the main navigation. For Oskari-based applications with customized functionality, this means that functionalities using the jQuery-based flyouts will probably need to be updated to React. We are still investigating the options we can support for these. Other frontend changes that could be included are:
+        </Text>
+        <ul style={{listStyleType: 'disc'}}>
+          <li>SVG-based (theme colored!) icons for toolbar and a new API for the toolbar functionality</li>
+          <li>Migrating plugin containers on map that are still initialized with jQuery. These are on the roadmap for removing the jQuery parts from these, but its not certain we can include this on 4.0 (basically the buttons on top of the map might see some API change)</li>
+          <li>Functionality for myplaces and userlayers will be dropped on 4.0 as the myfeatures functionality is the planned replacement for these and it is not feasible to maintain both myfeatures and the older similar functionalities side by side as we have plans on making myfeatures better than myplaces or userlayers are.</li>
+        </ul>
         <Text>
             <b>Improvements on the documentation (Q1-Q4)</b>
         </Text>
