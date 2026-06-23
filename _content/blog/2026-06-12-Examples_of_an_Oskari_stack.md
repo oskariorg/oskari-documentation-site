@@ -19,7 +19,7 @@ The workflow begins with spatial data creation. So naturally, the traditional Os
 
 When the data has been created, it is usually saved to a database, especially in larger organizations. More often than not, there’s a PostgreSQL database with the PostGIS extension.
 
-To get the map layers published in Oskari, a geospatial server such as GeoServer, is needed. The geospatial server is used to publish the created data as WMS and WFS services. Oskari can then fetch the layers via the APIs and allow the end-user to view the data.
+To get the map layers published in Oskari, a geospatial server such as GeoServer, is needed. The geospatial server is used to publish the created data as WMS and/or WFS services. Oskari can then fetch the layers via the APIs and allow the end-user to view the data. Note that the layers you use in your Oskari-based applications don't need to be hosted by you. Oskari is built for using data from multiple data providers, but if you only want to show data from your APIs, that is perfectly fine as well.
 
 And et voilá, that’s the super simplified version of the Oskari stack. Next we’ll do the nitpicking and dive deeper into the Oskari setup.
 
