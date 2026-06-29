@@ -15,13 +15,13 @@ In this blog post we’ll look into an example of the Oskari stack and give a co
 
 ## The initial setup
 
-The workflow begins with spatial data creation. So naturally, the traditional Oskari stack begins with a desktop GIS software – such as QGIS or ArcGIS. If the data is collected in the field, a handheld GPS device or mobile application is also usually in use.
+The workflow begins with spatial data creation. So naturally, in an organization that creates its own datasets, Oskari stack begins with a desktop GIS software such as QGIS or ArcGIS. If the data is collected in the field, a handheld GPS device or mobile application can also be used.
 
-When the data has been created, it is usually saved to a database, especially in larger organizations. More often than not, there’s a PostgreSQL database with the PostGIS extension.
+When the data has been created, it is usually saved to a database, especially in larger organizations. More often than not, there’s a PostgreSQL database with the PostGIS extension. PostgreSQL is a natural choice if the organization prefers open source in its software choices.
 
-To get the map layers published in Oskari, a geospatial server such as GeoServer, is needed. The geospatial server is used to publish the created data as WMS and/or WFS services. Oskari can then fetch the layers via the APIs and allow the end-user to view the data. Note that the layers you use in your Oskari-based applications don't need to be hosted by you. Oskari is built for using data from multiple data providers, but if you only want to show data from your APIs, that is perfectly fine as well.
+To get the map layers published in Oskari, a geospatial server such as GeoServer, is needed. Like postgreSQL, GeoServer is also open source. The geospatial server is used to publish the created data as WMS and/or WFS services. Oskari can then fetch the layers via the APIs and allow the end-user to view the data. Note that the layers you use in your Oskari-based applications don't need to be hosted by you. Oskari is built for using data from multiple data providers, but if you only want to show data from your APIs, that is perfectly fine as well.
 
-And et voilá, that’s the super simplified version of the Oskari stack. Next we’ll do the nitpicking and dive deeper into the Oskari setup.
+Now that you have a desktop GIS, database and server (and/or fetch data from other APIs as well) with your Oskari - et voilá, that’s one version of the Oskari stack. Next we’ll do the nitpicking and dive deeper into the Oskari setup.
 
 ![An example stack of Oskari infrastructure where data flows from desktop GIS software to database via a geospatial server to Oskari application.](/resources/2026/Oskari_example_stack1.png)
 
