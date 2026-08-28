@@ -2,7 +2,7 @@
 title: Examples of an Oskari stack
 excerpt: "We’ll look into examples of an Oskari stack and give a couple of examples."
 date: 2026-08-10 9:00:00 +0200
-image: resources\2026\Oskari_example_stack1.png
+image: /resources/2026/Oskari_example_stack1.png
 tags:
   - developing, news
 ---
@@ -23,7 +23,7 @@ To get the map layers published in Oskari, a geospatial server such as GeoServer
 
 Now that you have a desktop GIS, database and server (and/or fetch data from other APIs as well) with your Oskari - et voilá, that’s one version of the Oskari stack. Next we’ll do the nitpicking and dive deeper into the Oskari setup.
 
-![An example stack of Oskari infrastructure where data flows from desktop GIS software to database via a geospatial server to Oskari application.](\resources\2026\Oskari_example_stack1.png)
+![An example stack of Oskari infrastructure where data flows from desktop GIS software to database via a geospatial server to Oskari application.](/resources/2026/Oskari_example_stack1.png)
 
 ## Environments and separation
 
@@ -51,7 +51,7 @@ Conversely, Oskari can incorporate external open-data layers directly from other
 
 An organization may therefore maintain several databases and GeoServers that serve different audiences or technical needs, with Oskari acting as one of several consumers that compile and present relevant layers according to audience and purpose.
 
-![Another example stack of Oskari infrastructure which includes multiple software for data creation and editing, two databases (dev + cloud storage), two geospatial servers (dev and prod) and two Oskari instances (dev and prod).](\resources\2026\Oskari_example_stack2.png)
+![Another example stack of Oskari infrastructure which includes multiple software for data creation and editing, two databases (dev + cloud storage), two geospatial servers (dev and prod) and two Oskari instances (dev and prod).](/resources/2026/Oskari_example_stack2.png)
 
 ## Hosting and Scalability
 

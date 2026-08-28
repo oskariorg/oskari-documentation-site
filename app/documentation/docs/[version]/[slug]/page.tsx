@@ -5,6 +5,8 @@ import {  getVersionIndex } from '@/lib/utils'
 import availableVersions from '@/_content/docs';
 import Error from '@/components/Error'
 import { MarkdownFileMetadata } from '@/types/types'
+import type { Metadata } from 'next'
+import { MetadataHelper } from '@/utils/metadataHelper'
 import '@/styles/apidoc.scss'
 import '@fortawesome/fontawesome-free/js/fontawesome.min.js';
 import '@fortawesome/fontawesome-free/css/fontawesome.min.css';
@@ -13,20 +15,52 @@ import ApiDocContentWrapper from '@/app/documentation/api/components/ApiDocConte
 import AccordionListWrapper from '@/app/documentation/docs/[version]/[slug]/AccordionListWrapper'
 
 let indexJSON: { [key: string]: MarkdownFileMetadata[] } = {};
+const defaultOgImage = MetadataHelper.getOskariDefaultImage()
 
 export const generateMetadata = async ({
   params,
 }: {
   params: Promise<{ version: string, slug: string }>
-}) => {
+}): Promise<Metadata> => {
   const { version, slug } = await params;
   await initIndexJSON(version)
   const section = indexJSON[version]?.find((item: MarkdownFileMetadata) => item.slug === slug);
 
   if (section) {
-    return { title: section.title }
+    return {
+      title: section.title,
+      openGraph: {
+        title: section.title,
+        images: [
+          {
+            url: defaultOgImage,
+            alt: 'Oskari Map Application Platform',
+          },
+        ],
+      },
+      twitter: {
+        title: section.title,
+        images: [defaultOgImage],
+      },
+    }
   }
 
+  return {
+    title: 'Documentation',
+    openGraph: {
+      title: 'Documentation',
+      images: [
+        {
+          url: defaultOgImage,
+          alt: 'Oskari Map Application Platform',
+        },
+      ],
+    },
+    twitter: {
+      title: 'Documentation',
+      images: [defaultOgImage],
+    },
+  }
 }
 
 const initIndexJSON = async (version: string) => {

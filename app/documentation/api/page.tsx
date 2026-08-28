@@ -2,6 +2,27 @@ import Button from "@/components/Button";
 import HighlightBox from "@/components/HighlightBox";
 import DefaultLayout from "@/components/Layout";
 import Text from '@/components/Text'
+import type { Metadata } from 'next'
+import { MetadataHelper } from '@/utils/metadataHelper'
+
+const defaultOgImage = MetadataHelper.getOskariDefaultImage()
+
+export const metadata: Metadata = {
+  title: 'Oskari API',
+  openGraph: {
+    title: 'Oskari API',
+    images: [
+      {
+        url: defaultOgImage,
+        alt: 'Oskari Map Application Platform',
+      },
+    ],
+  },
+  twitter: {
+    title: 'Oskari API',
+    images: [defaultOgImage],
+  },
+}
 
 export default function ApiMainPage() {
   return <DefaultLayout heroSmall heroTitle="Oskari API">
