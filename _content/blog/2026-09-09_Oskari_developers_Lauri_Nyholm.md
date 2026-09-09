@@ -22,7 +22,7 @@ Each instance has its own repository including both the frontend and backend. A 
 
 We have a team of three people responsible for maintaining HSY’s Oskari instances, but over time it has increasingly become my project. It has been a nice experience getting to understand more about Oskari and the whole tech stack around it in general.
 
-HSY’s public instances use Oskari's download-basket bundle. The bundle is not part of the Oskari core but is available as a community bundle. ((See the code for the City of Tampere for that bundle here.)[https://github.com/oskariorg/oskari-frontend-contrib/tree/master/bundles/download-basket])
+HSY's public instances use Oskari's `download-basket` bundle. The bundle is not part of the Oskari core but is available as a community bundle. ([See the code for that bundle here.](https://github.com/oskariorg/oskari-frontend-contrib/tree/master/bundles/download-basket))
 
 Looking ahead
 
@@ -30,10 +30,10 @@ Looking ahead
 
 It may also be helpful to provide a ready-to-go software package that includes Oskari, GeoServer and a database. The documentation is really good at the moment, but getting started can be really hard for first-timers.
 
-I don’t have a “silver bullet” for Oskari’s future. The UI looks nicer after updating to newer releases, and the codebase has moved forward. I think that, for the broader benefit of Oskari, it would be good to see more commercial use of the software. Maybe Oskari could be used as the basis for a commercial product. That would bring more organizations and people around the software."
+I don’t have a "silver bullet" for Oskari’s future. The UI looks nicer after updating to newer releases, and the codebase has moved forward. I think that, for the broader benefit of Oskari, it would be good to see more commercial use of the software. Maybe Oskari could be used as the basis for a commercial product. That would bring more organizations and people around the software."
 
 You can read more about HSY's Oskari instances in our Use cases section:
-- (HSY's open map service)[https://www.oskari.org/blog/HSY-Open-Map-Service]
-- (SeutuMassa service)[https://www.oskari.org/blog/SeutuMassa-service]
+- [HSY's open map service](https://www.oskari.org/blog/HSY-Open-Map-Service)
+- [SeutuMassa service](https://www.oskari.org/blog/SeutuMassa-service)
 
-You can see the source code (in GitHub)[https://github.com/hsy-kuntayhtyma]
+You can see the source code [in GitHub](https://github.com/hsy-kuntayhtyma)
