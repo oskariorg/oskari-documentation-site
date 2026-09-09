@@ -1,8 +1,8 @@
 ---
 title: 'Oskari developers: Lauri Nyholm'
 excerpt: "We interviewed Lauri Nyholm from Advian Ltd. about his experiences in developing Oskari."
-date: 2026-08-17 9:00:00 +0200
-image: resources/2026/Lauri.JPG
+date: 2026-09-09 13:40:00 +0200
+image: /resources/2026/Lauri.JPG
 tags:
   - developing, news
 ---
