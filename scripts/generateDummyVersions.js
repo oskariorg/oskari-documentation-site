@@ -1,6 +1,11 @@
 const fs = require('fs');
 const path = require('path');
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const { execSync } = require('child_process');
 const { generateDocumentationMetadata } = require('./documentationMetadataHelper');
+
+// add index files for blogs etc
+execSync('node scripts/generateContentMetadata.js');
 
 // So build on GitHub Actions can work without cloning the documentation folders
 const generateDummyDocs = (folder, addIndex = true) => {
