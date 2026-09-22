@@ -1,6 +1,5 @@
 const fs = require('fs');
 const path = require('path');
-// eslint-disable-next-line @typescript-eslint/no-var-requires
 const { execSync } = require('child_process');
 const { generateDocumentationMetadata } = require('./documentationMetadataHelper');
 
