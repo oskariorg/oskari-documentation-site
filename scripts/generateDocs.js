@@ -1,5 +1,4 @@
 const LATEST_VERSION = 'latest';
-/* eslint-disable @typescript-eslint/no-var-requires */
 const fs = require('fs');
 const fsExtra = require('fs-extra');
 //const { lstatSync, readdirSync, existsSync } = require('fs');
