@@ -11,7 +11,7 @@ tags:
 
 If you’re already working with Oskari, you're benefitting on open source. Oskari is not a software where you have to pay licences to use it, the source code can be reviewed anytime and you do not have a vendor lock-in as the software can be maintained or developed by various different companies.
 
-Whether you do bug fixing, create new features or administer deployments you might have seen a pattern: the project improves when knowledge and effort flow in two directions. Not only for Oskari but for other open source software, too, the project stays alive and appealing to new users when it is actively maintained. 
+Whether you do bug fixing, create new features or administer changes you might have seen a pattern: the project improves when knowledge and effort flow in two directions. Not only for Oskari but for other open source software, too, the project stays alive and appealing to new users when it is actively maintained. 
 
 Very small projects might thrive for a while with just one contributor, but usually there is a team of developers and/or joint development between different organizations that creates the needed movement. This is usually the situation with projects that stay around for years, become regular go-to choices or even de facto standards. If the software is meant to be used for years or an organization has promised to provide services that rely on the software, it is desirable that the development does not rest on the shoulders of some lone core developer.
 
